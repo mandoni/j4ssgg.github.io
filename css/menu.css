@@ -148,7 +148,7 @@ img, video {
     
     .bar-icon-2 {
         visibility: visible;
-        display: flex;
+        display: initial;
     }
 }
 
@@ -159,5 +159,15 @@ img, video {
 
     .bar-bottom-icon {
         margin: 0 auto;
+    }
+
+    .bar-icon {
+        visibility: hidden;
+        display: none;
+    }
+
+    .bar-icon-2 {
+        visibility: visible;
+        display: initial;
     }
 }
