@@ -148,7 +148,7 @@ img, video {
     
     .bar-icon-2 {
         visibility: visible;
-        display: initial;
+        display: block;
     }
 }
 
@@ -168,6 +168,6 @@ img, video {
 
     .bar-icon-2 {
         visibility: visible;
-        display: initial;
+        display: block;
     }
 }
