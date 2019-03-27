@@ -1,0 +1,317 @@
+:root {
+    --icon-color: #333;
+    --first-letter-color: #2CBEC9;
+    --text-background-color: #ABE3E8;
+    --text-color: #333333;
+}
+
+@font-face {
+    font-family: 'Pluto Bold';
+    src: url('../fonts/PlutoBold.woff') format('woff'), url('../fonts/PlutoBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pluto Light';
+    src: url('../fonts/PlutoLight.woff') format('woff'), url('../fonts/PlutoLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tisa Pro';
+    src: url('../fonts/TisaPro.woff') format('woff'), url('../fonts/TisaPro.ttf') format('truetype');
+}
+
+hr {
+    max-width: 25em;
+    border-color: #333333;
+}
+
+.div-center {
+    margin: 0 auto;
+}
+
+.numeralia {
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.n-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.n-column {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(33% - 12px);
+}
+
+.autor{
+    padding: 0rem; 
+}
+
+.autor img{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.autor span {
+    display:  block;
+    text-align: center;
+}
+.nombre {
+    font-family: 'Pluto Bold';
+    font-size: 16px;
+}
+
+.rol {
+    font-family: 'Pluto Light';
+    font-size: 13px;
+}
+
+.fecha {
+    font-size: 16px;
+    font-family: 'Tisa Pro';
+}
+
+.pd {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    padding-left: 24rem;
+    padding-right: 24rem;
+}
+
+.pd-x {
+    padding-left: 18rem;
+    padding-right: 18rem;
+}
+
+.n-pd {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    padding-left: 24rem;
+    padding-right: 24rem;
+}
+
+.m-pd{
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    padding-left: 24rem;
+    padding-right: 24rem;
+}
+
+.carousel-pd {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 24rem;
+    padding-right: 24rem;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Tisa Pro';
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.mensaje {
+    font-family: 'Pluto Bold';
+    font-size: 34px;
+    line-height: 44px;
+}
+
+.parrafo-1 {
+    font-size: 20px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.parrafo {
+    text-align: left;
+}
+
+.parrafo-2 {
+    text-align: left;
+}
+
+.parrafo-2::first-letter {
+    font-weight: bold;
+    padding: 1.0rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 350%;
+    background-color: var(--first-letter-color);
+    color: white;
+    float: left;
+}
+
+
+
+.titulo {
+    font-weight: bold;
+}
+
+.titulo-2 {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.cita {
+    font-family: 'Pluto Bold';
+    font-size: 34px;
+    line-height: 44px;
+    padding-top: 3rem;
+}
+
+.cita-w {
+    font-family: 'Pluto Bold';
+    max-width: 600px;
+    font-size: 34px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.cita-bg {
+    background-color: var(--text-background-color);
+}
+
+/*
+.carousel-indicators li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-top: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #333333;   
+}
+.carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin-top: 10px;
+    background-color: #555555;
+}
+*/
+
+.carousel-mensaje{
+    overflow: hidden;
+    max-width: 900px;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/*Tablets */
+
+@media only screen and (max-width: 1280px) {
+    .cita {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .cita-w {
+        font-size: 34px;
+        line-height: 44px;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .mensaje {
+        font-family: 'Pluto Bold';
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .pd {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .pd-x {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .n-pd {
+        padding-top: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    hr {
+        max-width: 25em;
+    }
+    .n-column {
+        flex-basis: calc(33% - 12px);
+    }
+
+    .autor{
+        padding: 2rem; 
+    }
+    
+    .m-pd{
+        padding: 0;
+    }
+
+    .carousel-pd {
+        padding:0;
+    }
+}
+
+/*Smartphones*/
+
+@media only screen and (max-width: 600px) {
+    .cita {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .cita-w {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .mensaje {
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .pd {
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .pd-x {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .n-pd {
+        padding-top: 1rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    hr {
+        max-width: 15em;
+    }
+
+    .autor{
+        padding: 3rem; 
+    }
+    
+    .n-column {
+        flex-basis: 100%;
+    }
+
+    .m-pd{
+        padding: 0;
+    }
+
+    .carousel-pd {
+        padding:0;
+    }
+}

@@ -1,0 +1,173 @@
+:root {
+    --menu-color: #F2F2F2;
+    --menu-color-2: #333333;
+}
+.divider{
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 1px;
+}
+.bar-top {
+    background-color: var(--menu-color);
+}
+
+.bar-autores {
+    padding: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--menu-color) ;
+}
+
+.bar-bottom {
+    background-color: var(--menu-color-2);
+}
+.bar-image {
+    vertical-align: middle;
+    width: 250px;
+    margin: 0 auto;
+}
+
+
+.fa-icon {
+    font-size: 20px;
+    line-height: 50px;
+    left: 0;
+    width: 20px;
+    color: var(--icon-color);
+}
+
+.social{
+    float: right;
+    margin-right: 7px;
+}
+
+.bar-bottom-image {
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 0.7rem;
+}
+
+.bar-bottom-image:nth-child(1) {
+    width: 5rem;
+}
+
+
+.bar-bottom-image:nth-child(2) {
+    width: 12rem;
+}
+
+
+.bar-bottom-image:nth-child(3) {
+    width: 3rem;
+}
+
+.none {
+    background-color: rgba(red, green, blue, 0);
+    border: none;
+}
+
+a:focus button:focus {
+    border: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: var(--menu-color);
+    border-radius: 0;
+    border: none;
+    left: 0;
+    float: left;
+}
+
+.bar-icon {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 30px;
+    z-index: 100000000;
+    visibility: visible;
+}
+
+.bar-icon-2 {
+    position: relative;
+    top: 10px;
+    max-width: 30px;
+    visibility: hidden;
+    display: none;
+}
+
+.bar-bottom-icon {
+    position: relative;
+    float: right;
+    bottom: 0;
+    right: 0;
+    max-width: 50px;
+    z-index: 100000000;
+}
+
+img, video {
+    width: 100%;
+}
+
+
+
+
+/*Tablets */
+@media only screen and (max-width: 1280px) {
+    .bar-image {
+        width: 200px;
+    }
+    
+    .bar-bottom-icon {
+        margin: 0 auto;
+    }
+}
+
+
+/*Smartphones*/
+
+@media only screen and (max-width: 600px){
+    .bar-bottom-icon {
+        margin: 0 auto;
+    }
+
+    .bar-bottom-image{
+        margin: 0 auto;
+        position: relative;
+    }
+    .bar-image {
+        width: 180px;
+    }
+
+    .bar-icon {
+        visibility: hidden;
+        display: none;
+    }
+    
+    .bar-icon-2 {
+        visibility: visible;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .bar-image {
+        width: 150px;
+    }
+
+    .bar-bottom-icon {
+        margin: 0 auto;
+    }
+
+    .bar-icon {
+        visibility: hidden;
+        display: none;
+    }
+
+    .bar-icon-2 {
+        visibility: visible;
+        display: block;
+    }
+}
