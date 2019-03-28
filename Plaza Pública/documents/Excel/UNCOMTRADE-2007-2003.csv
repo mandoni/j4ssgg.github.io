@@ -1,0 +1,107 @@
+Classification,Year,Period,Period Desc.,Aggregate Level,Is Leaf Code,Trade Flow Code,Trade Flow,Reporter Code,Reporter,Reporter ISO,Partner Code,Partner,Partner ISO,2nd Partner Code,2nd Partner,2nd Partner ISO,Customs Proc. Code,Customs,Mode of Transport Code,Mode of Transport,Commodity Code,Commodity,Qty Unit Code,Qty Unit,Qty,Alt Qty Unit Code,Alt Qty Unit,Alt Qty,Netweight (kg),Gross weight (kg),Trade Value (US$),CIF Trade Value (US$),FOB Trade Value (US$),Flag
+H3,2007,2007,2007,2,0,2,Export,32,Argentina,ARG,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,668217,,,0
+H3,2007,2007,2007,2,0,2,Export,40,Austria,AUT,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,505273,,,0
+H3,2007,2007,2007,2,0,2,Export,56,Belgium,BEL,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,19440,,,0
+H3,2007,2007,2007,2,0,2,Export,156,China,CHN,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,3725,,,0
+H3,2007,2007,2007,2,0,2,Export,170,Colombia,COL,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,48916,,,0
+H3,2007,2007,2007,2,0,2,Export,203,Czechia,CZE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1710437,,,0
+H3,2007,2007,2007,2,0,1,Import,222,El Salvador,SLV,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,158,,,0
+H3,2007,2007,2007,2,0,2,Export,222,El Salvador,SLV,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,90135,,,0
+H3,2007,2007,2007,2,0,2,Export,276,Germany,DEU,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,176000,,,0
+H3,2007,2007,2007,2,0,1,Import,340,Honduras,HND,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,11343,,,0
+H3,2007,2007,2007,2,0,2,Export,376,Israel,ISR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1329000,,,0
+H3,2007,2007,2007,2,0,2,Export,381,Italy,ITA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,443291,,,0
+H3,2007,2007,2007,2,0,2,Export,410,Rep. of Korea,KOR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,877735,,,0
+H3,2007,2007,2007,2,0,1,Import,558,Nicaragua,NIC,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,473,,,0
+H3,2007,2007,2007,2,0,2,Export,558,Nicaragua,NIC,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1,,,0
+H3,2007,2007,2007,2,0,2,Export,688,Serbia,SRB,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,571331,,,0
+H3,2007,2007,2007,2,0,2,Export,703,Slovakia,SVK,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,131131,,,0
+H3,2007,2007,2007,2,0,2,Export,724,Spain,ESP,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,330839,,,0
+H3,2007,2007,2007,2,0,2,Export,757,Switzerland,CHE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,4967,,,0
+H3,2007,2007,2007,2,0,2,Export,792,Turkey,TUR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,803671,,,0
+H3,2007,2007,2007,2,0,2,Export,826,United Kingdom,GBR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,76379,,,0
+H3,2007,2007,2007,2,0,2,Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,2994731,,,0
+H3,2007,2007,2007,2,0,3,Re-Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,52561,,,0
+H2,2003,2003,2003,2,0,2,Export,32,Argentina,ARG,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,145609,,,0
+H2,2003,2003,2003,2,0,2,Export,40,Austria,AUT,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,184366,,,0
+H2,2003,2003,2003,2,0,2,Export,76,Brazil,BRA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,80202,,,0
+H2,2003,2003,2003,2,0,2,Export,156,China,CHN,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,56505,,,0
+H2,2003,2003,2003,2,0,1,Import,203,Czechia,CZE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,64,,,0
+H2,2003,2003,2003,2,0,2,Export,203,Czechia,CZE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1741137,,,0
+H2,2003,2003,2003,2,0,2,Export,276,Germany,DEU,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,61000,,,0
+H2,2003,2003,2003,2,0,1,Import,340,Honduras,HND,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,6681,,,0
+H2,2003,2003,2003,2,0,2,Export,348,Hungary,HUN,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,340000,,,0
+H2,2003,2003,2003,2,0,2,Export,381,Italy,ITA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,195825,,,0
+H2,2003,2003,2003,2,0,2,Export,410,Rep. of Korea,KOR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,145668,,,0
+H2,2003,2003,2003,2,0,2,Export,484,Mexico,MEX,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,201940,,,0
+H2,2003,2003,2003,2,0,2,Export,558,Nicaragua,NIC,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,26,,,0
+H2,2003,2003,2003,2,0,2,Export,643,Russian Federation,RUS,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,6660,,,0
+H2,2003,2003,2003,2,0,2,Export,703,Slovakia,SVK,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,32030,,,0
+H2,2003,2003,2003,2,0,2,Export,724,Spain,ESP,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,180186,,,0
+H2,2003,2003,2003,2,0,2,Export,792,Turkey,TUR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,84814,,,0
+H2,2003,2003,2003,2,0,2,Export,826,United Kingdom,GBR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,34576,,,0
+H2,2003,2003,2003,2,0,2,Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1439782,,,0
+H2,2003,2003,2003,2,0,3,Re-Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,61210,,,0
+H2,2004,2004,2004,2,0,2,Export,32,Argentina,ARG,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,144293,,,0
+H2,2004,2004,2004,2,0,2,Export,76,Brazil,BRA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,223272,,,0
+H2,2004,2004,2004,2,0,2,Export,203,Czechia,CZE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,713561,,,0
+H2,2004,2004,2004,2,0,1,Import,222,El Salvador,SLV,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,15,,,0
+H2,2004,2004,2004,2,0,2,Export,276,Germany,DEU,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,38000,,,0
+H2,2004,2004,2004,2,0,1,Import,340,Honduras,HND,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,10126,,,0
+H2,2004,2004,2004,2,0,2,Export,348,Hungary,HUN,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,402000,,,0
+H2,2004,2004,2004,2,0,2,Export,381,Italy,ITA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,297375,,,0
+H2,2004,2004,2004,2,0,2,Export,410,Rep. of Korea,KOR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,472000,,,0
+H2,2004,2004,2004,2,0,2,Export,484,Mexico,MEX,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,139617,,,0
+H2,2004,2004,2004,2,0,2,Export,724,Spain,ESP,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,213701,,,0
+H2,2004,2004,2004,2,0,2,Export,757,Switzerland,CHE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,4187,,,0
+H2,2004,2004,2004,2,0,2,Export,792,Turkey,TUR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,454524,,,0
+H2,2004,2004,2004,2,0,2,Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1142918,,,0
+H2,2005,2005,2005,2,0,2,Export,32,Argentina,ARG,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,218617,,,0
+H2,2005,2005,2005,2,0,1,Import,84,Belize,BLZ,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,322,,,0
+H2,2005,2005,2005,2,0,2,Export,203,Czechia,CZE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,675270,,,0
+H2,2005,2005,2005,2,0,2,Export,222,El Salvador,SLV,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,6437,,,0
+H2,2005,2005,2005,2,0,2,Export,276,Germany,DEU,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,153000,,,0
+H2,2005,2005,2005,2,0,1,Import,340,Honduras,HND,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1472,,,0
+H2,2005,2005,2005,2,0,2,Export,376,Israel,ISR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,93000,,,0
+H2,2005,2005,2005,2,0,2,Export,381,Italy,ITA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,235535,,,0
+H2,2005,2005,2005,2,0,2,Export,392,Japan,JPN,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,5165,,,0
+H2,2005,2005,2005,2,0,2,Export,410,Rep. of Korea,KOR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,515378,,,0
+H2,2005,2005,2005,2,0,2,Export,484,Mexico,MEX,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,445137,,,0
+H2,2005,2005,2005,2,0,2,Export,688,Serbia,SRB,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,265635,,,0
+H2,2005,2005,2005,2,0,2,Export,703,Slovakia,SVK,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,203774,,,0
+H2,2005,2005,2005,2,0,2,Export,724,Spain,ESP,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,299935,,,0
+H2,2005,2005,2005,2,0,2,Export,792,Turkey,TUR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,416842,,,0
+H2,2005,2005,2005,2,0,2,Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,928363,,,0
+H2,2006,2006,2006,2,0,2,Export,32,Argentina,ARG,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,548891,,,0
+H2,2006,2006,2006,2,0,2,Export,40,Austria,AUT,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,454,,,0
+H2,2006,2006,2006,2,0,2,Export,76,Brazil,BRA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,115670,,,0
+H2,2006,2006,2006,2,0,1,Import,84,Belize,BLZ,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,182503,,,0
+H2,2006,2006,2006,2,0,2,Export,170,Colombia,COL,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,15076,,,0
+H2,2006,2006,2006,2,0,2,Export,203,Czechia,CZE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,766280,,,0
+H2,2006,2006,2006,2,0,1,Import,222,El Salvador,SLV,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,925,,,0
+H2,2006,2006,2006,2,0,2,Export,222,El Salvador,SLV,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,400,,,0
+H2,2006,2006,2006,2,0,2,Export,251,France,FRA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,7532,,,0
+H2,2006,2006,2006,2,0,2,Export,276,Germany,DEU,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,147000,,,0
+H2,2006,2006,2006,2,0,1,Import,340,Honduras,HND,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,10386,,,0
+H2,2006,2006,2006,2,0,2,Export,340,Honduras,HND,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,184012,,,0
+H2,2006,2006,2006,2,0,2,Export,376,Israel,ISR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,881000,,,0
+H2,2006,2006,2006,2,0,2,Export,381,Italy,ITA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,386899,,,0
+H2,2006,2006,2006,2,0,2,Export,410,Rep. of Korea,KOR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,666164,,,0
+H2,2006,2006,2006,2,0,2,Export,484,Mexico,MEX,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,572798,,,0
+H2,2006,2006,2006,2,0,2,Export,591,Panama,PAN,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,900,,,0
+H2,2006,2006,2006,2,0,3,Re-Export,591,Panama,PAN,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,900,,,0
+H2,2006,2006,2006,2,0,2,Export,688,Serbia,SRB,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,367945,,,0
+H2,2006,2006,2006,2,0,2,Export,703,Slovakia,SVK,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,36460,,,0
+H2,2006,2006,2006,2,0,2,Export,724,Spain,ESP,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,432299,,,0
+H2,2006,2006,2006,2,0,2,Export,757,Switzerland,CHE,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,2682,,,0
+H2,2006,2006,2006,2,0,2,Export,792,Turkey,TUR,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,463646,,,0
+H2,2006,2006,2006,2,0,1,Import,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1053017,,,0
+H2,2006,2006,2006,2,0,2,Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,1825240,,,0
+H2,2006,2006,2006,2,0,3,Re-Export,842,USA,USA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,70130,,,0
+H2,2007,2007,2007,2,0,2,Export,76,Brazil,BRA,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,825,,,0
+H2,2007,2007,2007,2,0,1,Import,84,Belize,BLZ,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,80861,,,0
+H2,2007,2007,2007,2,0,2,Export,484,Mexico,MEX,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,670721,,,0
+H2,2007,2007,2007,2,0,2,Export,608,Philippines,PHL,320,Guatemala,GTM,,,,,,,,93,Arms and ammunition; parts and accessories thereof,1,No Quantity,,,,,,,259558,,,0
+H1,2003,2003,2003,2,0,2,Export,608,Philippines,PHL,320,Guatemala,GTM,,,,,,,,93,"Arms and ammunition, parts and accessories thereof",1,No Quantity,,,,,,,451351,,,0
+H1,2004,2004,2004,2,0,2,Export,608,Philippines,PHL,320,Guatemala,GTM,,,,,,,,93,"Arms and ammunition, parts and accessories thereof",1,No Quantity,,,,,,,583677,,,0
+H1,2005,2005,2005,2,0,2,Export,608,Philippines,PHL,320,Guatemala,GTM,,,,,,,,93,"Arms and ammunition, parts and accessories thereof",1,No Quantity,,,,,,,872463,,,0
