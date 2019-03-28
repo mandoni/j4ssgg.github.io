@@ -42,10 +42,10 @@ hr {
 }
 
 .n-column {
-    margin: 2px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
-    flex-basis: calc(33% - 12px);
+    flex-basis: calc(33% - 30px);
 }
 
 .autor{
@@ -255,7 +255,7 @@ p {
         max-width: 25em;
     }
     .n-column {
-        flex-basis: calc(33% - 12px);
+        flex-basis: calc(33% - 30px);
     }
 
     .autor{
