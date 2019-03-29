@@ -1,4 +1,7 @@
-$(document).ready(function () {
+
+
+$(function () {
+
     let celeste = '#4CC4CE';
     let cian = '#2CBEC9';
     let red = '#EE6A5A';
@@ -9,6 +12,7 @@ $(document).ready(function () {
         x: ['Guatemala', 'El Salvador', 'Honduras', 'Nicaragua', 'Costa Rica', 'Panamá'],
         y: [3987, 3942, 4624, 381, 453, 485],
         type: 'scatter',
+        autosize: true,
         line: {
             color: celeste,
             width: 4
@@ -28,9 +32,9 @@ $(document).ready(function () {
                 color: text
             }
         },
-        autosize: 'false',
-        height: 600,
+        autosize: true,
         xaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -38,6 +42,7 @@ $(document).ready(function () {
             }
         },
         yaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -52,6 +57,8 @@ $(document).ready(function () {
 
     var grafico1 = [
         {
+            autosize: true,
+
             x: grafico1_x,
             y: grafico1_y1,
             type: 'bar',
@@ -64,6 +71,8 @@ $(document).ready(function () {
             hoverinfo: 'none'*/
         },
         {
+            autosize: true,
+
             x: grafico1_x,
             y: grafico1_y2,
             type: 'bar',
@@ -87,9 +96,10 @@ $(document).ready(function () {
                 color: text
             }
         },
-        autosize: 'false',
+        autosize: true,
         height: 600,
         xaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -97,6 +107,7 @@ $(document).ready(function () {
             }
         },
         yaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -114,6 +125,8 @@ $(document).ready(function () {
 
     var grafico2 = [
         {
+            autosize: true,
+
             x: grafico2_x,
             y: grafico2_y1,
             type: 'bar',
@@ -126,6 +139,8 @@ $(document).ready(function () {
             hoverinfo: 'none'*/
         },
         {
+            autosize: true,
+
             x: grafico2_x,
             y: grafico2_y2,
             type: 'bar',
@@ -139,6 +154,8 @@ $(document).ready(function () {
 
         },
         {
+            autosize: true,
+
             x: grafico2_x,
             y: grafico2_y3,
             type: 'bar',
@@ -162,9 +179,10 @@ $(document).ready(function () {
                 color: text
             }
         },
-        autosize: 'false',
+        autosize: true,
         height: 600,
         xaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -172,6 +190,7 @@ $(document).ready(function () {
             }
         },
         yaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -215,6 +234,8 @@ $(document).ready(function () {
 
     var grafico3_2004 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2004,
             type: 'bar',
@@ -230,6 +251,8 @@ $(document).ready(function () {
 
     var grafico3_2005 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2005,
             type: 'bar',
@@ -244,6 +267,8 @@ $(document).ready(function () {
     ];
     var grafico3_2006 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2006,
             type: 'bar',
@@ -258,6 +283,8 @@ $(document).ready(function () {
     ];
     var grafico3_2007 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2007,
             type: 'bar',
@@ -272,6 +299,8 @@ $(document).ready(function () {
     ];
     var grafico3_2008 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2008,
             type: 'bar',
@@ -286,6 +315,8 @@ $(document).ready(function () {
     ];
     var grafico3_2009 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2009,
             type: 'bar',
@@ -300,6 +331,8 @@ $(document).ready(function () {
     ];
     var grafico3_2010 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2010,
             type: 'bar',
@@ -314,6 +347,8 @@ $(document).ready(function () {
     ];
     var grafico3_2011 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2011,
             type: 'bar',
@@ -329,6 +364,8 @@ $(document).ready(function () {
 
     var grafico3_2012 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2012,
             type: 'bar',
@@ -344,6 +381,8 @@ $(document).ready(function () {
 
     var grafico3_2013 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2013,
             type: 'bar',
@@ -358,6 +397,8 @@ $(document).ready(function () {
     ];
     var grafico3_2014 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2014,
             type: 'bar',
@@ -372,6 +413,8 @@ $(document).ready(function () {
     ];
     var grafico3_2017 = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_y2017,
             type: 'bar',
@@ -386,6 +429,8 @@ $(document).ready(function () {
     ];
     var grafico3_total = [
         {
+            autosize: true,
+
             x: grafico3_x,
             y: grafico3_ytotal,
             type: 'bar',
@@ -401,12 +446,7 @@ $(document).ready(function () {
 
     var grafico3_layout = {
 
-        margin: {
-            t: 100,
-            b: 270,
-            r: 125
-        },
-        autosize: 'false',
+        autosize: true,
         height: 600,
 
         title: {
@@ -417,8 +457,9 @@ $(document).ready(function () {
                 color: text
             }
         },
-        xaxis: {
 
+        xaxis: {
+            automargin: true,
             ticks: 'outside',
             tickangle: 45,
             font: {
@@ -427,7 +468,9 @@ $(document).ready(function () {
                 color: text
             }
         },
+
         yaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -437,25 +480,34 @@ $(document).ready(function () {
     };
 
 
-    var grafico4 = [{
-        x: [
-            'CONDOR S.A',
-            'CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA, S.A',
-            'SERVICIOS DE SEGURIDAD ORION, S.A',
-            'SISTEMAS PROFESIONALES DE SEGURIDAD S.A',
-            'STAFF DE SEGURIDAD GEVAS, S.A',
-            'TAURUS, S.A'
-        ],
-        y: [267000, 720000, 72000, 723360, 78500, 74000],
-        type: 'bar',
-        width: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5],
-        marker: {
-            color: '#4CC4CE'
+    var grafico4 = [
+        {
+
+            autosize: true,
+
+            x: [
+                'CONDOR S.A.',
+                'CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA, S.A.',
+                'SERVICIOS DE SEGURIDAD ORION, S.A.',
+                'SISTEMAS PROFESIONALES DE SEGURIDAD S.A.',
+                'STAFF DE SEGURIDAD GEVAS, S.A.',
+                'TAURUS, S.A.'
+            ],
+            y: [267000, 720000, 72000, 723360, 78500, 74000],
+            type: 'bar',
+            width: [0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+            marker: {
+                color: celeste
+            }
         }
-    }];
+    ];
 
 
     var grafico4_layout = {
+
+        autosize: true,
+        height: 600,
+
         title: {
             text: 'Los contratistas de las empresas con acuerdo',
             font: {
@@ -464,13 +516,9 @@ $(document).ready(function () {
                 color: text
             }
         },
-        margin: {
-            t: 0,
-            b: 210
-        },
-        autosize: 'false',
-        height: 600,
+
         xaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -478,6 +526,85 @@ $(document).ready(function () {
             }
         },
         yaxis: {
+            automargin: true,
+            font: {
+                family: 'TisaPro',
+                size: 14,
+                color: text
+            }
+        }
+    };
+
+    grafico5_x = [
+        'ALARMAS DE GUATEMALA, S.A.',
+        'ALFA UNO, S.A',
+        'BLACKTHORNE SECURITY, S.A.',
+        'CORPORACION DE SEGURIDAD COMANDO SUR, S.A.',
+        'EMPRESA DE SEGURIDAD PARTICULAR ELITE, S.A.',
+        'GRUPO ESCORPION, S.A.',
+        'ORANIZACIÓN DE SISTEMAS DE SEGURIDAD INTEGRAL E INVESTIGACIONES, S.A.',
+        'PROTECCION METROPOLITANA, S.A.',
+        'PROTECCION TOTAL, S.A.',
+        'SAFARI SEGURIDAD, S.A.',
+        'SECURITY PROFESSIONAL SYSTEMS, S.A.',
+        'SEGURIDAD 2614, S.A.',
+        'SERVICIO DE SEGURIDAD INTEGRAL, S.A.',
+        'SISTEMAS DE SEGURIDAD',
+        'VIGILANCIA Y SEGURIDAD EMPRESARIAL DE GUATEMALA'
+    ];
+    var grafico5 = [
+        {
+            autosize: true,
+
+            x: grafico5_x,
+            y: [2, 1, 1, 1, 2, 5, 1, 1, 2, 3, 3, 1, 13, 1, 1],
+            type: 'bar',
+            name: "Sí",
+            marker: {
+                color: celeste
+            },
+            hoverinfo: 'x+y'
+        },
+        {
+            autosize: true,
+
+            x: grafico5_x,
+            y: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+            type: 'bar',
+            name: 'Sí, y más con mismos apellidos',
+            marker: {
+                color: red
+            },
+            hoverinfo: 'x+y'
+        }
+    ];
+
+    var grafico5_layout = {
+
+        autosize: true,
+        height: 500,
+        barmode: 'stack',
+
+        title: {
+            text: 'Empresas con militares',
+            font: {
+                family: 'Pluto Bold',
+                size: 18,
+                color: text
+            }
+        },
+
+        xaxis: {
+            automargin: true,
+            font: {
+                family: 'TisaPro',
+                size: 14,
+                color: text
+            }
+        },
+
+        yaxis: {
+            automargin: true,
             font: {
                 family: 'TisaPro',
                 size: 14,
@@ -511,5 +638,8 @@ $(document).ready(function () {
 
 
     Plotly.newPlot('grafico4', grafico4, grafico4_layout, { responsive: true, displayModeBar: false });
+
+    Plotly.newPlot('grafico5', grafico5, grafico5_layout, { responsive: true, displayModeBar: false });
+
 
 });

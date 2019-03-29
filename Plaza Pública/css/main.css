@@ -20,6 +20,17 @@
     src: url('../fonts/TisaPro.woff') format('woff'), url('../fonts/TisaPro.ttf') format('truetype');
 }
 
+/*Plotly*/
+
+text {
+    font-size: 18px;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/**/
+
 hr {
     max-width: 25em;
     border-color: #333333;
@@ -48,18 +59,20 @@ hr {
     flex-basis: calc(33% - 30px);
 }
 
-.autor{
-    padding: 0rem; 
+.autor {
+    padding: 0rem;
 }
 
-.autor img{
+.autor img {
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+
 .autor span {
-    display:  block;
+    display: block;
     text-align: center;
 }
+
 .nombre {
     font-family: 'Pluto Bold';
     font-size: 16px;
@@ -87,6 +100,11 @@ hr {
     padding-right: 20rem;
 }
 
+.pd-g {
+    padding-left: 16rem;
+    padding-right: 16rem;
+}
+
 .n-pd {
     padding-top: 0rem;
     padding-bottom: 3rem;
@@ -94,7 +112,7 @@ hr {
     padding-right: 24rem;
 }
 
-.m-pd{
+.m-pd {
     padding-top: 0rem;
     padding-bottom: 3rem;
     padding-left: 24rem;
@@ -123,6 +141,7 @@ p {
     font-weight: normal;
     color: var(--text-color);
 }
+
 .mensaje {
     font-family: 'Pluto Bold';
     font-size: 34px;
@@ -154,8 +173,6 @@ p {
     color: white;
     float: left;
 }
-
-
 
 .titulo {
     font-weight: bold;
@@ -208,17 +225,19 @@ p {
 }
 */
 
-.carousel-mensaje{
+.carousel-mensaje {
     overflow: hidden;
     max-width: 900px;
     text-align: center;
     padding: 1rem;
 }
 
-
 /*Tablets */
 
 @media only screen and (max-width: 1280px) {
+    text {
+        font-size: 12px;
+    }
     .cita {
         font-size: 34px;
         line-height: 44px;
@@ -230,19 +249,21 @@ p {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
     .mensaje {
         font-family: 'Pluto Bold';
         font-size: 20px;
         line-height: 30px;
     }
-
     .pd {
         padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
     .pd-x {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .pd-g {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -257,23 +278,23 @@ p {
     .n-column {
         flex-basis: calc(33% - 30px);
     }
-
-    .autor{
-        padding: 2rem; 
+    .autor {
+        padding: 2rem;
     }
-    
-    .m-pd{
+    .m-pd {
         padding: 0;
     }
-
     .carousel-pd {
-        padding:0;
+        padding: 0;
     }
 }
 
 /*Smartphones*/
 
 @media only screen and (max-width: 600px) {
+    text {
+        font-size: 8px;
+    }
     .cita {
         font-size: 20px;
         line-height: 30px;
@@ -294,6 +315,10 @@ p {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    .pd-g {
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
     .pd-x {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -306,20 +331,16 @@ p {
     hr {
         max-width: 15em;
     }
-
-    .autor{
-        padding: 3rem; 
+    .autor {
+        padding: 3rem;
     }
-    
     .n-column {
         flex-basis: 100%;
     }
-
-    .m-pd{
+    .m-pd {
         padding: 0;
     }
-
     .carousel-pd {
-        padding:0;
+        padding: 0;
     }
 }
