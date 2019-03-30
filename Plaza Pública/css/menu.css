@@ -9,6 +9,7 @@
 }
 .bar-top {
     background-color: var(--menu-color);
+    box-shadow: 0px -10px 20px var(--menu-color-2);
 }
 
 .bar-autores {

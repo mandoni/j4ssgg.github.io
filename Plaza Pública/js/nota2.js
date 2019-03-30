@@ -78,10 +78,10 @@ $(function () {
 });*/
 
 let celeste = '#4CC4CE';
-    let cian = '#2CBEC9';
-    let red = '#EE6A5A';
-    let gray = '#939393';
-    let text = '#333333';
+let cian = '#2CBEC9';
+let red = '#EE6A5A';
+let gray = '#939393';
+let text = '#333333';
 
 function chart1() {
 
@@ -125,14 +125,16 @@ function chart1() {
     ]);
 
     var options = {
-        title: 'Las más denunciadas',
-        bars: 'horizontal',
-        series: { 0: { color: celeste } },
+        chart: {
+            title: 'Las más denunciadas'
+        },
+        //bars: 'horizontal',
+        //series: { 0: { color: celeste } },
         legend: { position: 'none' },
         height: 800
     };
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico1'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico1'));
     chart.draw(data, options);
 }

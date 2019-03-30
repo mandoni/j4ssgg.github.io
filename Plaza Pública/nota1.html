@@ -23,13 +23,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <script src="js/popper.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
 
     <script src="js/main.js"></script>
-    <script src="js/nota1.js"></script>
+    <script src="js/nota1.1.js"></script>
 
 </head>
 
@@ -38,7 +39,7 @@
     <!-- Navigation -->
 
 
-    <nav class="navbar navbar-expand-lg sticky-top bar-top py-0 pr-0">
+    <nav class="navbar navbar-expand-lg sticky-top bar-top  pr-0">
         <div class="container-fluid pr-0">
 
             <span data-toggle="dropdown">
@@ -88,7 +89,7 @@
 
 
     <!--Cita-->
-    <p class="text-center cita pd">
+    <p class="text-center cita pd pb-0">
         Los dueños de la seguridad privada en Guatemala
     </p>
 
@@ -96,7 +97,8 @@
     <hr />
 
     <!--Fecha-->
-    <p class="text-center fecha">05 de marzo de 2019</p>
+    <p class="text-center fecha">05 de marzo de 2019 - Por Suchit Chávez</p>
+     
 
     <!--Imagen-->
     <img src="images/nota1/los-duenos-de-la-seguridad-privada.gif">
@@ -107,12 +109,6 @@
         empresas de seguridad privada. Los nombres de los contratistas más beneficiados son constantes y se repiten año
         tras año. Los datos apuntan a lo que varios analistas aseguran: el mercado está dominado por militares
         retirados.
-    </p>
-
-    <!--Titulo-->
-
-    <p class="text-left titulo pd py-0">
-        Por Suchit Chávez
     </p>
 
     <!--Parrafo 2-->
@@ -161,7 +157,7 @@
 
     <!--Titulo-->
 
-    <p class="text-left titulo pd py-0">
+    <p class="text-left titulo pd ">
         ¿Por qué hablar de las empresas?
     </p>
 
@@ -177,13 +173,18 @@
     </p>
 
     <!-- Grafico 1-->
+    <div class="pd">
+        <div id="grafico1">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart1);
+            </script>
+        </div>
+    </div>
     <p class="pd pb-0 alt">
         Monto de quetzales destinados, por año, a la contratación de servicios relacionados a la seguridad.
-        <br>Fuente: Guatecompras, Ministerio de Finanzas
+        <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas
     </p>
-    <div class="pd-g ">
-        <div id="grafico1"></div>
-    </div>
 
 
 
@@ -242,8 +243,13 @@
     </p>
 
     <!-- Imagen 1-->
-    <div class="pd-g ">
-        <div id="imagen1"></div>
+    <div class="pd-x">
+        <div id="imagen1">
+            <script>
+                google.charts.load('current', { packages: ['corechart'] });
+                google.charts.setOnLoadCallback(image1);
+            </script>
+        </div>
     </div>
     <p class="pd pt-0 alt">
         Gráfica del estudio “Inseguridad ciudadana en Centroamérica. El negocio de la violencia”, del CEG (2015).
@@ -276,19 +282,24 @@
 
 
     <!-- Grafico 2-->
+    <div class="pd">
+        <div id="grafico2">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart2);
+            </script>
+        </div>
+    </div>
     <p class="pd pb-0 alt">
         El siguiente es un comparativo entre el presupuesto asignado a la PNC durante los últimos años, y la cantidades
         gastadas en seguridad privada por el Estado.
-        <br>Fuente: Guatecompras, Ministerio de Finanzas
+        <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas
     </p>
-    <div class="pd-g ">
-        <div id="grafico2"></div>
-    </div>
-    
+
 
     <!--Titulo-->
 
-    <p class="text-left titulo pd py-0">
+    <p class="text-left titulo pd ">
         Las leyes: una coladera
     </p>
 
@@ -367,111 +378,180 @@
     <!-- Carrusel-->
 
     <div class="bar-autores ">
-        <p class="pd pb-0 pt-5 alt">
-            Las empresas con acuerdo gubernamental, y no adecuadas a la ley de empresas privadas de seguridad de 2009
-            han seguido ganando contratos durante los últimos años
-            <br>Fuente: Guatecompras, Ministerio de Finanzas, Dirección General de Servicios de Seguridad Privada
-            (DIGESSP)
-        </p>
-        <div id="carousel" class="carousel-pd pt-0">
+        <div id="carousel" class="carousel-pd py-0">
             <div class="item">
-                <div id="grafico3_2004"></div>
+                <div id="grafico3_2004">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2004);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2004</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2005"></div>
+                <div id="grafico3_2005">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2005);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2005</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2006"></div>
+                <div id="grafico3_2006">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2006);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2006</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2007"></div>
+                <div id="grafico3_2007">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2007);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2007</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2008"></div>
+                <div id="grafico3_2008">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2008);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2008</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2009"></div>
+                <div id="grafico3_2009">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2009);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2009</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2010"></div>
+                <div id="grafico3_2010">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2010);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2010</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2011"></div>
+                <div id="grafico3_2011">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2011);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2011</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2012"></div>
+                <div id="grafico3_2012">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2012);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2012</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2013"></div>
+                <div id="grafico3_2013">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2013);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2013</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2014"></div>
+                <div id="grafico3_2014">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2014);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2014</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_2017"></div>
+                <div id="grafico3_2017">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_2017);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Año 2017</p>
                 </div>
             </div>
             <div class="item">
-                <div id="grafico3_total"></div>
+                <div id="grafico3_total">
+                    <script>
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(grafico3_total);
+                    </script>
+                </div>
                 <div class="carousel-mensaje">
                     <p class="mensaje">Totales por empresa</p>
                 </div>
             </div>
         </div>
+        <p class="pd alt pb-4 pt-0">
+            Las empresas con acuerdo gubernamental, y no adecuadas a la ley de empresas privadas de seguridad de 2009
+            han seguido ganando contratos durante los últimos años
+            <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Dirección General de Servicios de Seguridad Privada
+            (DIGESSP)
+        </p>
     </div>
 
     <!--Cita Pintada-->
 
-    <p class="text-center cita-w">
-        <span class="cita-bg">Entre 2013 y 2017, el Ministerio de Salud y el Ministerio de Comunicaciones, entre otras
-            instituciones estatales, contrataron empresas que no estaban adecuadas a la ley. .</span>
+    <p class="text center parrafo pd">
+        Entre 2013 y 2017, el Ministerio de Salud y el Ministerio de Comunicaciones, entre otras
+            instituciones estatales, contrataron empresas que no estaban adecuadas a la ley.
     </p>
 
-    <!-- Grafico 4-->
-    <p class="pd pb-0 alt">
+    <!-- Grafico 4-->   
+    <div class="pd">
+        <div id="grafico4">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart4);
+            </script>
+        </div>
+    </div>
+    <p class="pd alt pb-0 pt-0 ">
         En 2013 se dio un ultimátum a las empresas de seguridad privada para adecuarse a la ley de 2009, a riesgo de
         quedar en la ilegalidad. Sin embargo, el mismo Estado siguió contratándolas.
-        <br>Fuente: Guatecompras, Ministerio de Finanzas, Dirección General de Servicios de Seguridad Privada (DIGESSP)
+        <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Dirección General de Servicios de Seguridad Privada (DIGESSP)
     </p>
-    <div class="pd-g ">
-        <div id="grafico4"></div>
-    </div>
-    
 
 
     <p class="text center parrafo pd">
@@ -479,7 +559,7 @@
         seguridad privada, si no con los armeros (ver nota aparte).
     </p>
 
-    <p class="text-left titulo pd py-0">
+    <p class="text-left titulo pd ">
         Negocio de exmilitares
     </p>
 
@@ -518,15 +598,20 @@
         helicópteros y 20 tanques, entre otros datos.
     </p>
 
-    <!-- Grafico-->
-    <p class="pd pb-0 alt">
+    <!-- Grafico-->   
+    <div class="pd py-0">
+        <div id="grafico5">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart5);
+            </script>
+        </div>
+    </div>
+    <p class="pd alt pt-0 ">
         De las 22 empresas de seguridad privada, identificadas como mayores contratistas de los últimos 14 años, estas
         son las que tienen o han tenido a militares entre sus directivos, o auxiliares.
-        <br>Fuente: Guatecompras, Ministerio de Finanzas, Ministerio de la Defensa Nacional, fuentes propias.
+        <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Ministerio de la Defensa Nacional, fuentes propias.
     </p>
-    <div class="pd-g">
-        <div id="grafico5"></div>
-    </div>
 
     <p class="text center parrafo-2 pd">
         Adolfo Paredes, presidente de la Gremial de Empresas de Seguridad, es ambiguo al responder sobre si la seguridad
@@ -595,7 +680,7 @@
 
     <!--Logotipos-->
 
-    <nav class="navbar navbar-expand-lg bar-bottom py-0 pr-0">
+    <nav class="navbar navbar-expand-lg bar-bottom  pr-0">
 
 
 
