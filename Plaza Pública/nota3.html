@@ -23,6 +23,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
     <script src="js/popper.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -145,7 +147,12 @@
 
     <!-- Grafico 1-->
     <div class="pd-g">
-        <div id="grafico1"></div>
+        <div id="grafico1">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart1);
+            </script>
+        </div>
     </div>
     <p class="pd pt-0 pb-4 alt">
         Detalle del mayor volumen de gastos del Estado guatemalteco por categoría de análisis, entre 2004 y marzo de
@@ -155,13 +162,21 @@
 
     <!-- Grafico 2-->
     <div class="pd-g">
-        <div id="grafico2"></div>
+        <div id="grafico2">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart2);
+            </script>
+        </div>
     </div>
     <p class="pd pt-0 pb-4 alt">
         Detalle del mayor volumen de gastos del Estado guatemalteco por categoría de análisis, entre 2009 y marzo de
         2018, bajo la modalidad de contrataciones directas
         <br>Fuente: Guatecompras, Ministerio de Finanzas
     </p>
+
+
+
     <!--Parrafo 2-->
 
     <p class="text center parrafo-2 pd">
@@ -400,7 +415,12 @@
         <br>Fuente: Guatecompras, Ministerio de Finanzas
     </p>
     <div class="pd-g">
-        <div id="grafico3"></div>
+        <div id="grafico3">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart3);
+            </script>
+        </div>
     </div>
 
 

@@ -23,6 +23,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
     <script src="js/popper.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -159,13 +161,19 @@
 
 
     <!-- Grafico 1-->
-    
+
     <p class="pd pb-0 alt">
-        Cantidad de compras del Estado relacionadas a la seguridad, bajo la modalidad de contrato directo, pero que sobrepasan los 90 mil quetzales que estipula la ley para esa modalidad
+        Cantidad de compras del Estado relacionadas a la seguridad, bajo la modalidad de contrato directo, pero que
+        sobrepasan los 90 mil quetzales que estipula la ley para esa modalidad
         <br>Fuente: Guatecompras, Ministerio de Finanzas
     </p>
     <div class="pd-g">
-        <div id="grafico1"></div>
+        <div id="grafico1">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(drawChart);
+            </script>
+        </div>
     </div>
 
 

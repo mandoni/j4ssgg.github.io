@@ -23,6 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <script src="js/popper.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -138,7 +139,12 @@
 
     <!-- Grafico 1-->
     <div class="pd-g">
-        <div id="grafico1"></div>
+        <div id="grafico1">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart1);
+            </script>
+        </div>
     </div>
     <p class="pd pt-0 pb-4 alt">
         Detalle de la cantidad de homicidios perpetrados en Guatemala, entre 2008 y 2018, por causa de muerte. Las
@@ -283,13 +289,18 @@
 
 
     <!-- Grafico 2-->
-    
+
     <p class="pd pb-0 alt">
         Estas son las empresas que más licencias de importación de municiones han recibido en los últimos 22 años.
         <br>Fuente: Digecam, Ministerio de la Defensa
     </p>
     <div class="pd-g">
-        <div id="grafico2"></div>
+        <div id="grafico2">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart2);
+            </script>
+        </div>
     </div>
 
     <!--Parrafo 2-->

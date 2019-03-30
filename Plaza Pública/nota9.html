@@ -23,6 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <script src="js/popper.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -178,8 +179,21 @@
 
 
 
-    <!-- Grafico 1-->
-    <img class="pd pt-0" src="http://via.placeholder.com/1240x720.png?text=GRAFICO 1">
+    <!--Grafico 1-->
+    <p class="pd pb-0 alt">
+            Detalle de las autorizaciones especiales que la Digecam ha otorgado para compra de munición, entre 2009 y
+            abril de 2018. Los permisos significan las compras extra autorizadas fuera de los reglamentarias 200 municiones
+            mensuales para permisos de tenencia, 250 municiones mensuales para licencia de portación.
+            <br>Fuente: Digecam, Ministerio de la Defensa
+        </p>
+        <div class="pd-g">
+            <div id="grafico1">
+                <script>
+                    google.charts.load('current', { packages: ['corechart', 'bar'] });
+                    google.charts.setOnLoadCallback(chart1);
+                </script>
+            </div>
+        </div>
 
 
     <p class="text center parrafo-2 pd">
@@ -278,17 +292,22 @@
 
     </p>
 
+    <!--Grafico 2-->
 
-    <!--Grafico 1-->
     <p class="pd pb-0 alt">
-        Detalle de las autorizaciones especiales que la Digecam ha otorgado para compra de munición, entre 2009 y
-        abril de 2018. Los permisos significan las compras extra autorizadas fuera de los reglamentarias 200 municiones
-        mensuales para permisos de tenencia, 250 municiones mensuales para licencia de portación.
-        <br>Fuente: Digecam, Ministerio de la Defensa
-    </p>
-    <div class="pd-g">
-        <div id="grafico1"></div>
-    </div>
+            Detalle de los permisos de tenencia de arma concedidos, por año, por la Digecam. Los permisos de tenencia
+            amparan una sola arma, a diferencia de la licencia de portación, que puede amparar hasta tres armas.
+            <br>Fuente: Digecam, Ministerio de la Defensa
+        </p>
+        <div class="pd-g">
+            <div id="grafico2">
+                <script>
+                    google.charts.load('current', { packages: ['corechart', 'bar'] });
+                    google.charts.setOnLoadCallback(chart2);
+                </script>
+            </div>
+        </div>
+
 
     <p class="text center parrafo-2 pd">
         Los datos del Ministerio Público y la Policía Nacional Civil dan una idea de lo que podría ser la fluctuación
@@ -375,17 +394,6 @@
         Público, sus contratos de seguridad privada cubrían toda Guatemala.
 
     </p>
-
-    <!--Grafico 2-->
-
-    <p class="pd pb-0 alt">
-        Detalle de los permisos de tenencia de arma concedidos, por año, por la Digecam. Los permisos de tenencia
-        amparan una sola arma, a diferencia de la licencia de portación, que puede amparar hasta tres armas.
-        <br>Fuente: Digecam, Ministerio de la Defensa
-    </p>
-    <div class="pd-g">
-        <div id="grafico2"></div>
-    </div>
 
     <!--Titulo-->
 

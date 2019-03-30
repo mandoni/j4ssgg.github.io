@@ -23,6 +23,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
     <script src="js/popper.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -308,7 +310,12 @@
         <br>Fuente: Guatecompras, Ministerio de Finanzas, Organismo Judicial.
     </p>
     <div class="pd-g">
-        <div id="grafico1"></div>
+        <div id="grafico1">
+            <script>
+                google.charts.load('current', { packages: ['corechart', 'bar'] });
+                google.charts.setOnLoadCallback(chart1);
+            </script>
+        </div>
     </div>
 
     <!--Parrafo 2-->

@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
 
     let celeste = '#4CC4CE';
     let cian = '#2CBEC9';
@@ -57,4 +57,43 @@ $(function () {
 
     Plotly.newPlot('grafico1', grafico1, grafico1_layout, { responsive: true, displayModeBar: false });
     
-});
+});*/
+
+
+let celeste = '#4CC4CE';
+let cian = '#2CBEC9';
+let red = '#EE6A5A';
+let gray = '#939393';
+let text = '#333333';
+
+function drawChart() {
+    
+    // Define the chart to be drawn.
+    var data = google.visualization.arrayToDataTable([
+        ['Año', 'Dato'],
+        ['2009', 1245948],
+        ['2010', 88035291],
+        ['2011', 13393720],
+        ['2012', 453969463],
+        ['2013', 511265775],
+        ['2017', 193677857]
+    ]);
+
+    var options = {
+        title: 'Por fuera del límite', 
+        titleTextStyle: {
+            family: 'Pluto Bold',
+            size: 18,
+            color: text
+        }, 
+        bars: 'vertical',
+        series: { 0: {color: celeste} }
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.charts.Bar(document.getElementById('grafico1'));
+    chart.draw(data, options);
+}
+
+
+

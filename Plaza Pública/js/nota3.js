@@ -1,5 +1,5 @@
 
-
+/*
 $(function () {
 
     let celeste = '#4CC4CE';
@@ -145,3 +145,109 @@ $(function () {
     Plotly.newPlot('grafico2', grafico2, grafico2_layout, { responsive: true, displayModeBar: false });
 
 });
+*/
+
+
+let celeste = '#4CC4CE';
+let cian = '#2CBEC9';
+let red = '#EE6A5A';
+let gray = '#939393';
+let text = '#333333';
+
+
+function chart1() {
+
+    // Define the chart to be drawn.
+    var data = google.visualization.arrayToDataTable([
+        ['Categoría', 'Gastos'],
+        ['Seguridad y Vigilancia', 1883677377],
+        ['Equipo', 721418733.1],
+        ['Cámaras de Video CCT', 586014321.1],
+        ['Armas y Municiones', 137988426.7],
+        ['Consultorías y Servicios', 632722.84]
+    ]);
+
+    var options = {
+        title: '¿En qué se gasta más?',
+        bars: 'vertical',
+        series: { 0: { color: celeste } },
+        legend: { position: 'none' }
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.charts.Bar(document.getElementById('grafico1'));
+    chart.draw(data, options);
+}
+
+/*
+x: [
+            'Seguridad y Vigilancia',
+            'Consultorías y Servicios',
+            'Equipo',
+            'Cámaras de Video CCT',
+            'Armas y Municiones',
+        ],
+        y: [194979850.5, 21760538.21, 10991501.51, 7569826.83, 1348910],
+        */
+
+function chart2() {
+
+    // Define the chart to be drawn.
+    var data = google.visualization.arrayToDataTable([
+        ['Categoría', 'Gastos'],
+        ['Seguridad y Vigilancia', 194979850.5],
+        ['Consultorías y Servicios', 21760538.21],
+        ['Equipo', 10991501.51],
+        ['Cámaras de Video CCT', 7569826.83],
+        ['Armas y Municiones', 1348910]
+    ]);
+
+    var options = {
+        title: 'Las compras directas',
+        bars: 'vertical',
+        series: { 0: { color: red } },
+        legend: { position: 'none' }
+
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.charts.Bar(document.getElementById('grafico2'));
+    chart.draw(data, options);
+}
+
+
+/*
+
+x: ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'],
+        y: [15657868.07, 55294828.5, 7232355.3, 60323597.49, 88764641.24, 170571, 8000, 2801977.97, 6315244.07, 81543,47],
+*/
+
+function chart3() {
+
+    // Define the chart to be drawn.
+    var data = google.visualization.arrayToDataTable([
+        ['Años', 'Monto en contrataciones'],
+        ['2009', 15657868.07],
+        ['2010', 55294828.5],
+        ['2011', 7232355.3],
+        ['2012', 60323597.49],
+        ['2013', 88764641.24],
+        ['2014', 170571],
+        ['2015', 8000],
+        ['2016', 2801977.97],
+        ['2017', 6315244.07],
+        ['2018', 81543.47],
+    ]);
+
+    var options = {
+        title: 'Años de bonanza',
+        bars: 'vertical',
+        series: { 0: { color: celeste } },
+        legend: { position: 'none' }
+
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.charts.Bar(document.getElementById('grafico3'));
+    chart.draw(data, options);
+}

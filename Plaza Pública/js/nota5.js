@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
 
     let celeste = '#4CC4CE';
     let cian = '#2CBEC9';
@@ -121,9 +121,9 @@ $(function () {
             marker: {
                 color: celeste
             }
-            /*text: grafico1_y.map(String),
+            text: grafico1_y.map(String),
             textposition: 'auto',
-            hoverinfo: 'none'*/
+            hoverinfo: 'none'
         }
 
         
@@ -168,4 +168,101 @@ $(function () {
     
     Plotly.newPlot('grafico2', grafico2, grafico2_layout, { responsive: true, displayModeBar: false });
 
-});
+});*/
+
+
+let celeste = '#4CC4CE';
+let cian = '#2CBEC9';
+let red = '#EE6A5A';
+let gray = '#939393';
+let text = '#333333';
+
+
+
+function chart1() {
+    // Define the chart to be drawn.
+    var data = google.visualization.arrayToDataTable([
+        ['Año', 'Arma Blanca ', 'Arma de Fuego ', 'Artefacto Explosivo ', 'Estrangulamiento ', 'Linchamiento ', 'Objeto Contundente '],
+        ['2008', 619, 5237, 1, 201, 17, 217],
+        ['2009', 593, 5405, 10, 221, 49, 220],
+        ['2010', 555, 5009, 11, 179, 33, 173],
+        ['2011', 563, 4676, 14, 180, 44, 204],
+        ['2012', 566, 4226, 0, 147, 13, 203],
+        ['2013', 531, 4258, 0, 183, 33, 248],
+        ['2014', 517, 4128, 1, 137, 18, 187],
+        ['2015', 533, 3899, 0, 138, 23, 185],
+        ['2016', 540, 3574, 7, 144, 23, 232],
+        ['2017', 463, 3431, 1, 221, 29, 265],
+        ['2018', 307, 2595, 0, 155, 7, 169]
+    ]);
+
+    var options = {
+        title: 'Homicidios 2008-2018',
+        titleTextStyle: {
+            family: 'Pluto Bold',
+            size: 18,
+            color: text
+        },
+        legend: { position: 'top' },
+        bar: { groupWidth: '75%' },
+        isStacked: true,
+        height: 550,
+        tooltip: {isHtml: true},
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.visualization.ColumnChart(document.getElementById('grafico1'));
+    chart.draw(data, options);
+}
+
+
+//grafico2_x = ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'];
+//y: [78467,65384,106869,115243,66171,78494,58248,62707,62429,21595],
+
+function chart2() {
+    // Define the chart to be drawn.
+    var data = google.visualization.arrayToDataTable([
+        ['Empresas', 'Licencias recibidas'],
+        ['CORPO Q', 153],
+        ['AIRE LIBRE', 152],
+        ['MUNICAR', 115],
+        ['CEMSA', 77],
+        ['MUNICIONES', 68],
+        ['COMERCIAL AGRICOLA BOLAÑOS', 53],
+        ['ALMACEN EL BISONTE', 47],
+        ['MAINLEY', 42],
+        ['DEFENSA', 38],
+        ['ARMAS DEFENSIVAS Y DEPORTIVAS', 31],
+        ['MUNAR', 29],
+        ['POLIGONOS S.A.', 24],
+        ['SANTA CATARINA MITA', 23],
+        ['CAMUFLAJE', 21],
+        ['IMPORTADORA GUATEMALTECA', 18],
+        ['IMSA', 18],
+        ['ARMAS Y MUNICIONES', 15],
+        ['SAFARI SHOOTING S.A.', 11],
+        ['GIR', 11],
+        ['COMERCIAL DE ARMAS Y MUNICIONES DE JUTIAPA', 10],
+        ['STI GUATEMALA', 9],
+        ['CONFEDERACION DEPORTIVA AUTONOMA DE GUATEMALA', 8],
+        ['ESQUI-SPORT', 8],
+        ['PUNTO DE MIRA', 7]
+    ]);
+
+    var options = {
+        title: 'Importadores de municiones',
+        titleTextStyle: {
+            family: 'Pluto Bold',
+            size: 18,
+            color: text
+        },
+        legend: { position: 'none' },
+        bars: 'vertical',
+        series: { 0: { color: red } },
+        tooltip: {isHtml: true}
+    };
+
+    // Instantiate and draw the chart.
+    var chart = new google.charts.Bar(document.getElementById('grafico2'));
+    chart.draw(data, options);
+}
