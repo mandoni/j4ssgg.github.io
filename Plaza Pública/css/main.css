@@ -35,17 +35,12 @@ g {
 /**/
 
 hr {
-    max-width: 25em;
+    max-width: 640px;
     border-color: #333333;
 }
 
 .div-center {
     margin: 0 auto;
-}
-
-.numeralia {
-    margin: 0 auto;
-    padding: 2em;
 }
 
 .n-row {
@@ -117,10 +112,13 @@ hr {
 }
 
 .n-pd {
-    padding-top: 0rem;
-    padding-bottom: 3rem;
-    padding-left: 24rem;
-    padding-right: 24rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 780px;
+    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .m-pd {
