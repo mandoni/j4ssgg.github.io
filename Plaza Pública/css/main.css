@@ -178,6 +178,24 @@ p {
     line-height: 44px;
 }
 
+table {
+    font-size: 18px;
+    font-family: 'Tisa Pro';
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+thead{
+    font-size: 18px;
+    font-family: 'Pluto Bold';
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+tr td:first-child {
+    text-align: center;
+}
+
 .parrafo-1 {
     font-size: 20px;
     line-height: 43px;
@@ -244,6 +262,18 @@ p {
 .graph {
     border-top: 3px solid var(--bar-color);
     border-bottom: 3px solid var(--bar-color);
+}
+
+a:link, a:visited {
+    color: var(--first-letter-color);
+}
+
+a:hover {
+    color: var(--text-background-color);
+}
+
+.dropdown a{
+    color: var(--text-color) !important;
 }
 
 /*Tablets */
