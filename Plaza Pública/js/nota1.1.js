@@ -24,30 +24,36 @@ function image1() {
         },
         lineWidth: 5,
         legend: { position: 'none' },
+        chartArea: {
+            width: '80%',
+            height: '80%'
+        },
         vAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         series: { 0: { color: red } },
         tooltip: { isHtml: true },
         height: 400
     };
- 
+
     // Instantiate and draw the chart.
-    var chart = new google.visualization.LineChart(document.getElementById('imagen1'));
-    chart.draw(data, options);
+    var chart = new google.charts.Bar(document.getElementById('imagen1'));
+    chart.draw(data,  google.charts.Bar.convertOptions(options));
 }
 
 
@@ -75,33 +81,41 @@ function chart1() {
         chart: {
             //title: 'Contratos 2004-2008'
         },
+
+        chartArea: {
+            width: '100%',
+            height: '90%'
+        },
         legend: { position: 'none' },
         vAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         bars: 'horizontal',
         series: { 0: { color: celeste }, 1: { color: red } },
         tooltip: { isHtml: true },
-        height: 600
+        bar: { groupWidth: 75 },
+        height: 800
 
     };
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico1'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 
@@ -132,32 +146,40 @@ function chart2() {
         chart: {
             //title: 'Seguridad pública versus seguridad privada'
         },
+
+        chartArea: {
+            width: '100%',
+            height: '90%'
+        },
         legend: { position: 'none' },
         vAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         bars: 'horizontal',
         series: { 0: { color: gray }, 1: { color: celeste }, 2: { color: red } },
         tooltip: { isHtml: true },
+        bar: { groupWidth: 85 },
         height: 1000
     };
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico2'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 //grafico3_y2004 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 158200, 158200];
@@ -167,23 +189,36 @@ let grafico3_options = {
     backgroundColor: {
         fillOpacity: 0
     },
+    legend: {
+        textStyle:
+        {
+            color: text,
+            fontName: 'Tisa Pro',
+            fontSize: 12
+        }
+    },
+    chartArea: {
+        width: '100%',
+        height: '90%'
+    },
     height: 400,
     tooltip: { isHtml: true },
+    pieSliceText: 'value',
     vAxis: {
         textStyle:
-            {
-                color: text,
-                fontName: 'Tisa Pro',
-                fontSize: 16
-            }
+        {
+            color: text,
+            fontName: 'Tisa Pro',
+            fontSize: 16
+        }
     },
     hAxis: {
         textStyle:
-            {
-                color: text,
-                fontName: 'Tisa Pro',
-                fontSize: 16
-            }
+        {
+            color: text,
+            fontName: 'Tisa Pro',
+            fontSize: 16
+        }
     }
 };
 
@@ -238,7 +273,7 @@ function grafico3_2005() {
 
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2005'));    
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2005'));
     chart.draw(data, grafico3_options);
 }
 
@@ -520,27 +555,41 @@ function grafico3_total() {
         backgroundColor: {
             fillOpacity: 0
         },
+        legend: {
+            textStyle:
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 12
+            }
+        },
+        chartArea: {
+            width: '100%',
+            height: '90%'
+        },
+        sliceVisibilityThreshold: 0.03,
+        pieSliceText: 'value',
+        height: 400,
         pieHole: .4,
         tooltip: { isHtml: true },
         vAxis: {
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
-        },
-        height:400
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
+        }
     };
-    
+
     // Instantiate and draw the chart.
     var chart = new google.visualization.PieChart(document.getElementById('grafico3_total'));
     chart.draw(data, options);
@@ -553,11 +602,11 @@ function chart4() {
     var data = google.visualization.arrayToDataTable([
         ['Empresas', 'Contratos'],
         ['CONDOR S.A.', 267000],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 720000],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 72000],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 723360],
         ['STAFF DE SEGURIDAD GEVAS S.A.', 78500],
-        ['TAURUS S.A.', 74000]
+        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 723360],
+        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 72000],
+        ['TAURUS S.A.', 74000],
+        ['CORP. DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 720000]
     ]);
 
 
@@ -568,24 +617,24 @@ function chart4() {
         legend: { position: 'none' },
         vAxis: {
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         bars: 'vertical',
         series: { 0: { color: celeste } },
         tooltip: { isHtml: true },
-        height: 600
+        height: 370
     };
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico4'));
@@ -619,31 +668,80 @@ function chart5() {
         chart: {
             //title: 'Los contratistas de las empresas con acuerdo',
         },
-        //legend: { position: 'none' },
-        //bars: 'horizontal',
-        //series: { 0: { color: celeste } },
-        pieHole: 0.4,   
+        legend: {
+            textStyle:
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 12
+            }
+        },
+        chartArea: {
+            width: '100%',
+            height: '90%'
+        },
+        pieSliceText: 'value',
+        pieHole: 0.4,
         tooltip: { isHtml: true },
         vAxis: {
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
-        height: 300,
-        pieSliceText: 'value'
+        height: 400
+
     };
     // Instantiate and draw the chart.
     var chart = new google.visualization.PieChart(document.getElementById('grafico5'));
     chart.draw(data, options);
 }
+
+
+/* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */
+let free = true;
+
+function redraw() {
+    draw1();
+    draw2();
+    draw3();
+    draw41();
+    draw42();
+    draw43();
+    draw44();
+    draw45();
+    draw46();
+    draw47();
+    draw41();
+    draw48();
+    draw49();
+    draw410();
+    draw411();
+    draw412();
+    draw413();
+    draw5();
+    draw6();
+}
+
+$(window).resize(function () {
+    if (free) {
+        free = false;
+        setTimeout(function () {
+            redraw();
+            free = true
+        }, 1000);
+    }
+});
+
+
+$(document).ready(redraw);

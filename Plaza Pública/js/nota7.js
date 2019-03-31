@@ -81,30 +81,28 @@ function drawChart() {
 
     var options = {
         //title: 'Por fuera del límite', 
-        legend: {
-            position: 'bottom',
-            textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+        chartArea: {
+            width: '100%',
+            height: '90%'
         },
+        legend: { position: 'none' },
         vAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         bars: 'vertical',
         series: { 0: { color: celeste } },
@@ -115,6 +113,26 @@ function drawChart() {
     var chart = new google.charts.Bar(document.getElementById('grafico1'));
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+
+/* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */
+let free = true;
+
+function redraw() {
+    draw1();
+}
+
+$(window).resize(function () {
+    if (free) {
+        free = false;
+        setTimeout(function () {
+            redraw();
+            free = true
+        }, 1000);
+    }
+});
+
+
+$(document).ready(redraw);
 
 
 

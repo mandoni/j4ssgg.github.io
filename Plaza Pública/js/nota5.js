@@ -198,37 +198,35 @@ function chart1() {
 
     var options = {
         //title: 'Homicidios 2008-2018'
-        legend: {
-            position: 'bottom',
-            textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+        chartArea: {
+            width: '100%',
+            height: '70%'
         },
+        legend: { position: 'bottom' },
         vAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         //bar: { groupWidth: '75%' },
         //isStacked: true,
-        colors: [ celeste, red, gray, 'yellow', 'purple', 'darkgray'],
+        colors: [celeste, red, gray, 'yellow', 'purple', 'darkgray'],
         bars: 'horizontal',
-        bar: { groupWidth: 85 },
-        height: 1000,
+        bar: { groupWidth: 100 },
+        height: 1200,
     };
 
     // Instantiate and draw the chart.
@@ -277,34 +275,32 @@ function chart2() {
             size: 18,
             color: text
         },
-        legend: {
-            position: 'bottom',
-            textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+        chartArea: {
+            width: '100%',
+            height: '90%'
         },
+        legend: { position: 'none' },
         vAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         bars: 'vertical',
         series: { 0: { color: red } },
-        tooltip: {isHtml: true},
+        tooltip: { isHtml: true },
         height: 400
     };
 
@@ -312,3 +308,25 @@ function chart2() {
     var chart = new google.charts.Bar(document.getElementById('grafico2'));
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+
+
+/* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */
+let free = true;
+
+function redraw() {
+    draw1();
+    draw2();
+}
+
+$(window).resize(function () {
+    if (free) {
+        free = false;
+        setTimeout(function () {
+            redraw();
+            free = true
+        }, 1000);
+    }
+});
+
+
+$(document).ready(redraw);

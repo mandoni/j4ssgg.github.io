@@ -170,9 +170,12 @@ function chart1() {
     var options = {
         //title: '¿En qué se gasta más?',
         bars: 'vertical',
+        chartArea: {
+            width: '100%',
+            height: '90%'
+        },
         series: { 0: { color: celeste } },
-        legend: { position: 'none' },
-        height: 300
+        legend: { position: 'none' }
     };
 
     // Instantiate and draw the chart.
@@ -206,9 +209,12 @@ function chart2() {
     var options = {
         //title: 'Las compras directas',
         bars: 'vertical',
+        chartArea: {
+            width: '100%',
+            height: '90%'
+        },
         series: { 0: { color: red } },
-        legend: { position: 'none' },
-        height: 300
+        legend: { position: 'none' }
 
     };
 
@@ -244,6 +250,10 @@ function chart3() {
     var options = {
         //title: 'Años de bonanza',
         bars: 'vertical',
+        chartArea: {
+            width: '100%',
+            height: '90%'
+        },
         series: { 0: { color: celeste } },
         legend: { position: 'none' },
         vAxis: {
@@ -269,3 +279,25 @@ function chart3() {
     var chart = new google.charts.Bar(document.getElementById('grafico3'));
     chart.draw(data, options);
 }
+
+/* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */
+let free = true;
+
+function redraw() {
+    draw1();
+    draw3();
+    draw2();
+}
+
+$(window).resize(function () {
+    if (free) {
+        free = false;
+        setTimeout(function () {
+            redraw();
+            free = true
+        }, 1000);
+    }
+});
+
+
+$(document).ready(redraw);

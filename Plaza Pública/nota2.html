@@ -310,11 +310,13 @@
             </div>
         </div>
 
-        <div class="px-5 py-0">
+        <div class="p-5">
             <div id="grafico1">
                 <script>
-                    google.charts.load('current', { packages: ['corechart', 'bar'] });
-                    google.charts.setOnLoadCallback(chart1);
+                   function draw1(){
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(chart1);
+                   }
                 </script>
             </div>
         </div>

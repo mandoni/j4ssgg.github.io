@@ -149,8 +149,10 @@
         <div class="p-5">
             <div id="grafico1">
                 <script>
-                    google.charts.load('current', { packages: ['corechart', 'bar'] });
-                    google.charts.setOnLoadCallback(chart1);
+                    function draw1() {
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(chart1);
+                    }
                 </script>
             </div>
         </div>
@@ -313,8 +315,10 @@
         <div class="p-5">
             <div id="grafico2">
                 <script>
-                    google.charts.load('current', { packages: ['corechart', 'bar'] });
-                    google.charts.setOnLoadCallback(chart2);
+                    function draw2() {
+                        google.charts.load('current', { packages: ['corechart', 'bar'] });
+                        google.charts.setOnLoadCallback(chart2);
+                    }
                 </script>
             </div>
         </div>

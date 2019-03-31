@@ -133,30 +133,28 @@ function chart1() {
         //title: 'Permisos especiales frecuentes',
         bars: 'vertical',
         series: { 0: { color: celeste } },
-        legend: {
-            position: 'bottom',
-            textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+        chartArea: {
+            width: '100%',
+            height: '90%'
         },
+        legend: { position: 'none' },
         vAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         height: 300
     };
@@ -190,30 +188,28 @@ function chart2() {
         //title: '¿Cuántas armas legales?',
         bars: 'vertical',
         series: { 0: { color: red } },
-        legend: {
-            position: 'bottom',
-            textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+        chartArea: {
+            width: '100%',
+            height: '90%'
         },
+        legend: { position: 'none' },
         vAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         hAxis: {
+            title: '',
             textStyle:
-                {
-                    color: text,
-                    fontName: 'Tisa Pro',
-                    fontSize: 16
-                }
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
         },
         height: 300
     };
@@ -222,3 +218,25 @@ function chart2() {
     var chart = new google.charts.Bar(document.getElementById('grafico2'));
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+
+
+/* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */
+let free = true;
+
+function redraw() {
+    draw1();
+    draw2()
+}
+
+$(window).resize(function () {
+    if (free) {
+        free = false;
+        setTimeout(function () {
+            redraw();
+            free = true
+        }, 1000);
+    }
+});
+
+
+$(document).ready(redraw);
