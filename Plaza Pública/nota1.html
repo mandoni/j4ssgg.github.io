@@ -98,10 +98,10 @@
 
     <!--Fecha-->
     <p class="text-center fecha">05 de marzo de 2019 - Por Suchit Chávez</p>
-     
+
 
     <!--Imagen-->
-    <img src="images/nota1/los-duenos-de-la-seguridad-privada.gif">
+    <img src="images/portadas/los-duenos-de-la-seguridad-privada.gif">
 
     <!--Párrafo 1-->
     <p class="text-center parrafo-1 pd-x py-4">
@@ -173,18 +173,32 @@
     </p>
 
     <!-- Grafico 1-->
-    <div class="pd">
-        <div id="grafico1">
-            <script>
-                google.charts.load('current', { packages: ['corechart', 'bar'] });
-                google.charts.setOnLoadCallback(chart1);
-            </script>
+
+    <div class="pd graph">
+        <div class="px-5 alt">
+            <div class="content">
+                <div class="title"> Contratos 2004-2008<img src="images/isotipo.svg"></div><br>
+                <div>
+                    Monto de quetzales destinados, por año, a la contratación de servicios relacionados a la seguridad.
+                </div>
+
+            </div>
         </div>
+
+        <div class="p-5">
+            <div id="grafico1">
+                <script>
+                    google.charts.load('current', { packages: ['corechart', 'bar'] });
+                    google.charts.setOnLoadCallback(chart1);
+                </script>
+            </div>
+        </div>
+
+        <p class="text-center px-5">
+            <b>Fuente:</b> Guatecompras, Ministerio de Finanzas
+        </p>
     </div>
-    <p class="pd pb-0 alt">
-        Monto de quetzales destinados, por año, a la contratación de servicios relacionados a la seguridad.
-        <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas
-    </p>
+
 
 
 
@@ -243,17 +257,33 @@
     </p>
 
     <!-- Imagen 1-->
-    <div class="pd-x">
-        <div id="imagen1">
-            <script>
-                google.charts.load('current', { packages: ['corechart'] });
-                google.charts.setOnLoadCallback(image1);
-            </script>
+
+    <div class="pd graph">
+        <div class="px-5 alt">
+            <div class="content">
+                <div class="title">Centroamérica: Muertes causadas con armas de fuego 2014<img src="images/isotipo.svg">
+                </div><br>
+                <div>
+                    Gráfica del estudio “Inseguridad ciudadana en Centroamérica. El negocio de la violencia”
+                </div>
+
+            </div>
         </div>
+
+        <div class="">
+            <div id="imagen1">
+                <script>
+                    google.charts.load('current', { packages: ['corechart'] });
+                    google.charts.setOnLoadCallback(image1);
+                </script>
+            </div>
+        </div>
+
+        <p class="text-center px-5">
+            <b>Fuente:</b> CEG (2015)
+        </p>
     </div>
-    <p class="pd pt-0 alt">
-        Gráfica del estudio “Inseguridad ciudadana en Centroamérica. El negocio de la violencia”, del CEG (2015).
-    </p>
+
 
     <!--Parrafo 2-->
 
@@ -282,19 +312,34 @@
 
 
     <!-- Grafico 2-->
-    <div class="pd">
-        <div id="grafico2">
-            <script>
-                google.charts.load('current', { packages: ['corechart', 'bar'] });
-                google.charts.setOnLoadCallback(chart2);
-            </script>
+
+    <div class="pd graph">
+        <div class="px-5 alt">
+            <div class="content">
+                <div class="title"> Seguridad pública versus seguridad privada<img src="images/isotipo.svg"></div><br>
+                <div>
+                    El siguiente es un comparativo entre el presupuesto asignado a la PNC durante los últimos años, y la
+                    cantidades
+                    gastadas en seguridad privada por el Estado.
+                </div>
+
+            </div>
         </div>
+
+        <div class="p-5">
+            <div id="grafico2">
+                <script>
+                    google.charts.load('current', { packages: ['corechart', 'bar'] });
+                    google.charts.setOnLoadCallback(chart2);
+                </script>
+            </div>
+        </div>
+
+        <p class="text-center px-5">
+            <b>Fuente:</b> Guatecompras, Ministerio de Finanzas
+        </p>
     </div>
-    <p class="pd pb-0 alt">
-        El siguiente es un comparativo entre el presupuesto asignado a la PNC durante los últimos años, y la cantidades
-        gastadas en seguridad privada por el Estado.
-        <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas
-    </p>
+
 
 
     <!--Titulo-->
@@ -375,158 +420,169 @@
 
 
     <!-- Grafico 3-->
-    <!-- Carrusel-->
 
-    <div class="bar-autores ">
-        <div id="carousel" class="carousel-pd py-0">
-            <div class="item">
-                <div id="grafico3_2004">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2004);
-                    </script>
+    <div class="pd graph">
+        <div class="px-5 alt">
+            <div class="content">
+                <div class="title"> Empresas con acuerdo gubernamental<img src="images/isotipo.svg"></div><br>
+                <div>
+                    Las empresas con acuerdo gubernamental, y no adecuadas a la ley de empresas privadas de seguridad de
+                    2009 han seguido ganando contratos durante los últimos años
                 </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2004</p>
-                </div>
+
             </div>
-            <div class="item">
-                <div id="grafico3_2005">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2005);
-                    </script>
+        </div>
+
+        <div class="p-5">
+            <div id="carousel">
+                <div class="item">
+                    <div id="grafico3_2004">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2004);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2004</p>
+                    </div>
                 </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2005</p>
+                <div class="item">
+                    <div id="grafico3_2005">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2005);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2005</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2006">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2006);
-                    </script>
+                <div class="item">
+                    <div id="grafico3_2006">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2006);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2006</p>
+                    </div>
                 </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2006</p>
+                <div class="item">
+                    <div id="grafico3_2007">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2007);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2007</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2007">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2007);
-                    </script>
+                <div class="item">
+                    <div id="grafico3_2008">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2008);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2008</p>
+                    </div>
                 </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2007</p>
+                <div class="item">
+                    <div id="grafico3_2009">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2009);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2009</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2008">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2008);
-                    </script>
+                <div class="item">
+                    <div id="grafico3_2010">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2010);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2010</p>
+                    </div>
                 </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2008</p>
+                <div class="item">
+                    <div id="grafico3_2011">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2011);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2011</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2009">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2009);
-                    </script>
+                <div class="item">
+                    <div id="grafico3_2012">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2012);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2012</p>
+                    </div>
                 </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2009</p>
+                <div class="item">
+                    <div id="grafico3_2013">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2013);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2013</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2010">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2010);
-                    </script>
+                <div class="item">
+                    <div id="grafico3_2014">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2014);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2014</p>
+                    </div>
                 </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2010</p>
+                <div class="item">
+                    <div id="grafico3_2017">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_2017);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Año 2017</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2011">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2011);
-                    </script>
-                </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2011</p>
-                </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2012">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2012);
-                    </script>
-                </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2012</p>
-                </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2013">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2013);
-                    </script>
-                </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2013</p>
-                </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2014">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2014);
-                    </script>
-                </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2014</p>
-                </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_2017">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_2017);
-                    </script>
-                </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Año 2017</p>
-                </div>
-            </div>
-            <div class="item">
-                <div id="grafico3_total">
-                    <script>
-                        google.charts.load('current', { packages: ['corechart', 'bar'] });
-                        google.charts.setOnLoadCallback(grafico3_total);
-                    </script>
-                </div>
-                <div class="carousel-mensaje">
-                    <p class="mensaje">Totales por empresa</p>
+                <div class="item">
+                    <div id="grafico3_total">
+                        <script>
+                            google.charts.load('current', { packages: ['corechart', 'bar'] });
+                            google.charts.setOnLoadCallback(grafico3_total);
+                        </script>
+                    </div>
+                    <div class="carousel-mensaje">
+                        <p class="mensaje">Totales por empresa</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="pd alt pb-4 pt-0">
-            Las empresas con acuerdo gubernamental, y no adecuadas a la ley de empresas privadas de seguridad de 2009
-            han seguido ganando contratos durante los últimos años
-            <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Dirección General de Servicios de Seguridad Privada
+
+        <p class="text-center px-5">
+            <b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Dirección General de Servicios de Seguridad Privada
             (DIGESSP)
         </p>
     </div>
@@ -535,23 +591,37 @@
 
     <p class="text center parrafo pd">
         Entre 2013 y 2017, el Ministerio de Salud y el Ministerio de Comunicaciones, entre otras
-            instituciones estatales, contrataron empresas que no estaban adecuadas a la ley.
+        instituciones estatales, contrataron empresas que no estaban adecuadas a la ley.
     </p>
 
-    <!-- Grafico 4-->   
-    <div class="pd">
-        <div id="grafico4">
-            <script>
-                google.charts.load('current', { packages: ['corechart', 'bar'] });
-                google.charts.setOnLoadCallback(chart4);
-            </script>
+    <!-- Grafico 4-->
+    <div class="pd graph">
+        <div class="px-5 alt">
+            <div class="content">
+                <div class="title">Los contratistas de las empresas con acuerdo<img src="images/isotipo.svg"></div><br>
+                <div>
+                    En 2013 se dio un ultimátum a las empresas de seguridad privada para adecuarse a la ley de 2009, a
+                    riesgo de
+                    quedar en la ilegalidad. Sin embargo, el mismo Estado siguió contratándolas.
+                </div>
+
+            </div>
         </div>
+
+        <div class="p-5">
+            <div id="grafico4">
+                <script>
+                    google.charts.load('current', { packages: ['corechart', 'bar'] });
+                    google.charts.setOnLoadCallback(chart4);
+                </script>
+            </div>
+        </div>
+
+        <p class="text-center px-5">
+            <b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Dirección General de Servicios de Seguridad Privada
+            (DIGESSP)
+        </p>
     </div>
-    <p class="pd alt pb-0 pt-0 ">
-        En 2013 se dio un ultimátum a las empresas de seguridad privada para adecuarse a la ley de 2009, a riesgo de
-        quedar en la ilegalidad. Sin embargo, el mismo Estado siguió contratándolas.
-        <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Dirección General de Servicios de Seguridad Privada (DIGESSP)
-    </p>
 
 
     <p class="text center parrafo pd">
@@ -598,20 +668,36 @@
         helicópteros y 20 tanques, entre otros datos.
     </p>
 
-    <!-- Grafico-->   
-    <div class="pd py-0">
-        <div id="grafico5">
-            <script>
-                google.charts.load('current', { packages: ['corechart', 'bar'] });
-                google.charts.setOnLoadCallback(chart5);
-            </script>
+    <!-- Grafico-->
+
+    <div class="pd graph">
+        <div class="px-5 alt">
+            <div class="content">
+                <div class="title">Las más denunciadas<img src="images/isotipo.svg"></div><br>
+                <div>
+                    De las 22 empresas de seguridad privada, identificadas como mayores contratistas de los últimos 14
+                    años, estas
+                    son las que tienen o han tenido a militares entre sus directivos, o auxiliares.
+                </div>
+
+            </div>
         </div>
+
+        <div class="px-5 py-0">
+            <div id="grafico5">
+                <script>
+                    google.charts.load('current', { packages: ['corechart', 'bar'] });
+                    google.charts.setOnLoadCallback(chart5);
+                </script>
+            </div>
+        </div>
+
+        <p class="text-center px-5">
+            <b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Ministerio de la Defensa Nacional, fuentes
+            propias.
+        </p>
     </div>
-    <p class="pd alt pt-0 ">
-        De las 22 empresas de seguridad privada, identificadas como mayores contratistas de los últimos 14 años, estas
-        son las que tienen o han tenido a militares entre sus directivos, o auxiliares.
-        <br><b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Ministerio de la Defensa Nacional, fuentes propias.
-    </p>
+
 
     <p class="text center parrafo-2 pd">
         Adolfo Paredes, presidente de la Gremial de Empresas de Seguridad, es ambiguo al responder sobre si la seguridad

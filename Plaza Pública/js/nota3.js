@@ -27,7 +27,7 @@ $(function () {
     }];
 
     grafico1_layout = {
-        title: {
+        //title: {
             text: '¿En qué se gasta más?',
             font: {
                 family: 'Pluto Bold',
@@ -71,7 +71,7 @@ $(function () {
     }];
 
     grafico2_layout = {
-        title: {
+        //title: {
             text: 'Las compras directas',
             font: {
                 family: 'Pluto Bold',
@@ -113,7 +113,7 @@ $(function () {
     }];
 
     grafico3_layout = {
-        title: {
+        //title: {
             text: 'Años de bonanza',
             font: {
                 family: 'Pluto Bold',
@@ -168,10 +168,11 @@ function chart1() {
     ]);
 
     var options = {
-        title: '¿En qué se gasta más?',
+        //title: '¿En qué se gasta más?',
         bars: 'vertical',
         series: { 0: { color: celeste } },
-        legend: { position: 'none' }
+        legend: { position: 'none' },
+        height: 300
     };
 
     // Instantiate and draw the chart.
@@ -203,10 +204,11 @@ function chart2() {
     ]);
 
     var options = {
-        title: 'Las compras directas',
+        //title: 'Las compras directas',
         bars: 'vertical',
         series: { 0: { color: red } },
-        legend: { position: 'none' }
+        legend: { position: 'none' },
+        height: 300
 
     };
 
@@ -240,10 +242,26 @@ function chart3() {
     ]);
 
     var options = {
-        title: 'Años de bonanza',
+        //title: 'Años de bonanza',
         bars: 'vertical',
         series: { 0: { color: celeste } },
-        legend: { position: 'none' }
+        legend: { position: 'none' },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
 
     };
 

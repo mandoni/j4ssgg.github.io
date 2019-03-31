@@ -156,19 +156,35 @@
 
     <!-- Grafico 1-->
 
-    <p class="pd pb-0 alt">
-        Cantidad de compras del Estado relacionadas a la seguridad, bajo la modalidad de contrato directo, pero que
-        sobrepasan los 90 mil quetzales que estipula la ley para esa modalidad
-        <br>Fuente: Guatecompras, Ministerio de Finanzas
-    </p>
-    <div class="pd">
-        <div id="grafico1">
-            <script>
-                google.charts.load('current', { packages: ['corechart', 'bar'] });
-                google.charts.setOnLoadCallback(drawChart);
-            </script>
+
+    <div class="pd-g graph">
+        <div class="px-5 alt">
+            <div class="content">
+                <div class="title">Por fuera del límite<img src="images/isotipo.svg"></div><br>
+                <div>
+                    Cantidad de compras del Estado relacionadas a la seguridad, bajo la modalidad de contrato directo,
+                    pero que
+                    sobrepasan los 90 mil quetzales que estipula la ley para esa modalidad
+                </div>
+
+            </div>
         </div>
+
+        <div class="p-5">
+            <div id="grafico1">
+                <script>
+                    google.charts.load('current', { packages: ['corechart', 'bar'] });
+                    google.charts.setOnLoadCallback(drawChart);
+                </script>
+            </div>
+        </div>
+
+        <p class="text-center px-5">
+            <b>Fuente:</b> Guatecompras, Ministerio de Finanzas
+        </p>
     </div>
+
+
 
 
     <!--Parrafo 2-->

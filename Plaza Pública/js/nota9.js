@@ -23,7 +23,7 @@
 
         autosize: true,
         height: 500,
-        title: {
+        //title: {
             text: 'Permisos especiales frecuentes',
             font: {
                 family: 'Pluto Bold',
@@ -72,7 +72,7 @@
         autosize: true,
         height: 500,
 
-        title: {
+        //title: {
             text: '¿Cuántas armas legales?',
             font: {
                 family: 'Pluto Bold',
@@ -115,7 +115,7 @@ let text = '#333333';
 //y: [2526, 6508, 6600, 6603, 5757, 612, 188, 83],
 
 
-function chart1(){
+function chart1() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Año', 'Permisos emitidos'],
@@ -130,28 +130,47 @@ function chart1(){
     ]);
 
     var options = {
-        title: 'Permisos especiales frecuentes', 
-        titleTextStyle: {
-            family: 'Pluto Bold',
-            size: 18,
-            color: text
-        }, 
+        //title: 'Permisos especiales frecuentes',
         bars: 'vertical',
-        series: { 0: {color: celeste} },
-        legend: {position:'none'},
+        series: { 0: { color: celeste } },
+        legend: {
+            position: 'bottom',
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         height: 300
     };
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico1'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 
 //grafico2_x = ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'];
 //y: [78467,65384,106869,115243,66171,78494,58248,62707,62429,21595],
 
-function chart2(){
+function chart2() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Año', 'Permisos especiales'],
@@ -168,19 +187,38 @@ function chart2(){
     ]);
 
     var options = {
-        title: '¿Cuántas armas legales?', 
-        titleTextStyle: {
-            family: 'Pluto Bold',
-            size: 18,
-            color: text
-        }, 
+        //title: '¿Cuántas armas legales?',
         bars: 'vertical',
-        series: { 0: {color: red} },
-        legend: {position:'none'},
+        series: { 0: { color: red } },
+        legend: {
+            position: 'bottom',
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         height: 300
     };
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico2'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }

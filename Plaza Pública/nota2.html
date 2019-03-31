@@ -101,7 +101,7 @@
 
 
     <!--Imagen-->
-    <img src="images/portada-nota2.gif">
+    <img src="images/portadas/portada-nota2.gif">
 
     <!--Párrafo 1-->
     <p class="text-center parrafo-1 pd-x py-4">
@@ -296,18 +296,32 @@
 
 
     <!-- Grafico 1-->
-    <p class="pd pb-0 alt">
-        Esta es la cantidad de procesos registrados por el Organismo Judicial para las 22 empresas de seguridad privada
-        investigadas por Laberinto del Poder, identificadas como mayores contratistas del Estado.
-        <br>Fuente: Guatecompras, Ministerio de Finanzas, Organismo Judicial.
-    </p>
-    <div class="pd">
-        <div id="grafico1">
-            <script>
-                google.charts.load('current', { packages: ['corechart', 'bar'] });
-                google.charts.setOnLoadCallback(chart1);
-            </script>
+
+    <div class="pd graph">
+        <div class="px-5 alt">
+            <div class="content">
+                <div class="title">Las más denunciadas<img src="images/isotipo.svg"></div><br>
+                <div>
+                    Esta es la cantidad de procesos registrados por el Organismo Judicial para las 22 empresas de
+                    seguridad privada
+                    investigadas por Laberinto del Poder, identificadas como mayores contratistas del Estado.
+                </div>
+
+            </div>
         </div>
+
+        <div class="px-5 py-0">
+            <div id="grafico1">
+                <script>
+                    google.charts.load('current', { packages: ['corechart', 'bar'] });
+                    google.charts.setOnLoadCallback(chart1);
+                </script>
+            </div>
+        </div>
+
+        <p class="text-center px-5">
+            <b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Organismo Judicial.
+        </p>
     </div>
 
     <!--Parrafo 2-->

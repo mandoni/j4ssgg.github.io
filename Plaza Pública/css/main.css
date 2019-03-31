@@ -3,6 +3,7 @@
     --first-letter-color: #2CBEC9;
     --text-background-color: #ABE3E8;
     --text-color: #333333;
+    --bar-color: #939393;
 }
 
 @font-face {
@@ -20,13 +21,16 @@
     src: url('../fonts/TisaPro.woff') format('woff'), url('../fonts/TisaPro.ttf') format('truetype');
 }
 
-/*Plotly*/
+/*Charts*/
 
 g>svg {
     font-family: 'Tisa Pro' !important;
     font-size: 14px;
-  }
+}
 
+g {
+    width: 100%;
+}
 
 /**/
 
@@ -90,23 +94,26 @@ hr {
 .pd {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    max-width: 720px;
+    max-width: 780px;
     margin: 0 auto;
-}
-
-.pd {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .pd-x {
     padding-left: 20rem;
     padding-right: 20rem;
 }
 
 .pd-g {
-    padding-left: 16rem;
-    padding-right: 16rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 780px;
+    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .n-pd {
@@ -137,13 +144,32 @@ p {
     color: var(--text-color);
 }
 
-.alt {
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-    font-family: 'Tisa Pro';
-    font-weight: normal;
+.title {
+    font-size: 18px;
+    font-family: 'Pluto Bold';
     color: var(--text-color);
+}
+
+.alt {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    font-family: 'Tisa Pro';
+    color: var(--text-color);
+}
+
+.alt div {
+    display: inline;
+}
+
+.alt img {
+    max-width: 50px;
+    float: right;
+    margin-left: 10px;
+}
+
+.content {
+    max-width: 100%;
 }
 
 .mensaje {
@@ -208,31 +234,16 @@ p {
     background-color: var(--text-background-color);
 }
 
-/*
-.carousel-indicators li {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin-top: 10px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: #333333;   
-}
-.carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin-top: 10px;
-    background-color: #555555;
-}
-*/
-
 .carousel-mensaje {
     overflow: hidden;
-    max-width: 720px;
+    max-width: 780px;
     text-align: center;
     padding: 1rem;
+}
+
+.graph {
+    border-top: 3px solid var(--bar-color);
+    border-bottom: 3px solid var(--bar-color);
 }
 
 /*Tablets */
@@ -267,8 +278,8 @@ p {
         padding-right: 2rem;
     }
     .pd-g {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .n-pd {
         padding-top: 2rem;
@@ -315,13 +326,23 @@ p {
     }
     .pd {
         padding-top: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .pd-g {
-        padding-left: 0.1rem;
-        padding-right: 0.1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
+
+    .p-5 {
+        padding: 0.5rem!important;
+    }
+
+    .px-5 {
+        padding-left: 0.5rem!important;
+        padding-right: 0.5rem !important;
+    }
+
     .pd-x {
         padding-left: 2rem;
         padding-right: 2rem;

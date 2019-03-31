@@ -60,7 +60,7 @@
         height: 500,
         barmode: 'stack',
 
-        title: {
+        //title: {
             text: 'Homicidios 2008-2018',
             font: {
                 family: 'Pluto Bold',
@@ -134,7 +134,7 @@
         autosize: true,
         height: 600,
 
-        title: {
+        //title: {
             text: 'Importadores de municiones',
             font: {
                 family: 'Pluto Bold',
@@ -197,22 +197,43 @@ function chart1() {
     ]);
 
     var options = {
-        title: 'Homicidios 2008-2018',
-        titleTextStyle: {
-            family: 'Pluto Bold',
-            size: 18,
-            color: text
+        //title: 'Homicidios 2008-2018'
+        legend: {
+            position: 'bottom',
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
         },
-        legend: { position: 'top' },
-        bar: { groupWidth: '75%' },
-        isStacked: true,
-        height: 550,
-        tooltip: {isHtml: true},
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        //bar: { groupWidth: '75%' },
+        //isStacked: true,
+        colors: [ celeste, red, gray, 'yellow', 'purple', 'darkgray'],
+        bars: 'horizontal',
+        bar: { groupWidth: 85 },
+        height: 1000,
     };
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.ColumnChart(document.getElementById('grafico1'));
-    chart.draw(data, options);
+    var chart = new google.charts.Bar(document.getElementById('grafico1'));
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 
@@ -250,19 +271,44 @@ function chart2() {
     ]);
 
     var options = {
-        title: 'Importadores de municiones',
+        //title: 'Importadores de municiones',
         titleTextStyle: {
             family: 'Pluto Bold',
             size: 18,
             color: text
         },
-        legend: { position: 'none' },
+        legend: {
+            position: 'bottom',
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         bars: 'vertical',
         series: { 0: { color: red } },
-        tooltip: {isHtml: true}
+        tooltip: {isHtml: true},
+        height: 400
     };
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico2'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }

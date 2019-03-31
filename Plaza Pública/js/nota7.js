@@ -67,10 +67,10 @@ let gray = '#939393';
 let text = '#333333';
 
 function drawChart() {
-    
+
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
-        ['Año', 'Dato'],
+        ['Año', 'Compras totales'],
         ['2009', 1245948],
         ['2010', 88035291],
         ['2011', 13393720],
@@ -80,19 +80,40 @@ function drawChart() {
     ]);
 
     var options = {
-        title: 'Por fuera del límite', 
-        titleTextStyle: {
-            family: 'Pluto Bold',
-            size: 18,
-            color: text
-        }, 
+        //title: 'Por fuera del límite', 
+        legend: {
+            position: 'bottom',
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         bars: 'vertical',
-        series: { 0: {color: celeste} }
+        series: { 0: { color: celeste } },
+        height: 450
     };
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico1'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 

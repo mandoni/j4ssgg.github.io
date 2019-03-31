@@ -20,10 +20,26 @@ function image1() {
 
     var options = {
         chart: {
-            title: 'Centroamérica: Muertes causadas con armas de fuego 2014'
+            //title: 'Centroamérica: Muertes causadas con armas de fuego 2014'
         },
         lineWidth: 5,
         legend: { position: 'none' },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         series: { 0: { color: red } },
         tooltip: { isHtml: true },
         height: 400
@@ -57,9 +73,25 @@ function chart1() {
 
     var options = {
         chart: {
-            title: 'Contratos 2004-2008'
+            //title: 'Contratos 2004-2008'
         },
         legend: { position: 'none' },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         bars: 'horizontal',
         series: { 0: { color: celeste }, 1: { color: red } },
         tooltip: { isHtml: true },
@@ -98,9 +130,25 @@ function chart2() {
 
     var options = {
         chart: {
-            title: 'Seguridad pública versus seguridad privada'
+            //title: 'Seguridad pública versus seguridad privada'
         },
         legend: { position: 'none' },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         bars: 'horizontal',
         series: { 0: { color: gray }, 1: { color: celeste }, 2: { color: red } },
         tooltip: { isHtml: true },
@@ -121,6 +169,22 @@ let grafico3_options = {
     },
     height: 400,
     tooltip: { isHtml: true },
+    vAxis: {
+        textStyle:
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
+    },
+    hAxis: {
+        textStyle:
+            {
+                color: text,
+                fontName: 'Tisa Pro',
+                fontSize: 16
+            }
+    }
 };
 
 
@@ -458,6 +522,22 @@ function grafico3_total() {
         },
         pieHole: .4,
         tooltip: { isHtml: true },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         height:400
     };
     
@@ -483,9 +563,25 @@ function chart4() {
 
     options = {
         chart: {
-            title: 'Los contratistas de las empresas con acuerdo'
+            //title: 'Los contratistas de las empresas con acuerdo'
         },
         legend: { position: 'none' },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
         bars: 'vertical',
         series: { 0: { color: celeste } },
         tooltip: { isHtml: true },
@@ -521,14 +617,31 @@ function chart5() {
 
     options = {
         chart: {
-            title: 'Los contratistas de las empresas con acuerdo',
+            //title: 'Los contratistas de las empresas con acuerdo',
         },
         //legend: { position: 'none' },
         //bars: 'horizontal',
         //series: { 0: { color: celeste } },
         pieHole: 0.4,   
         tooltip: { isHtml: true },
-        height: 600,
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        hAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 16
+                }
+        },
+        height: 300,
+        pieSliceText: 'value'
     };
     // Instantiate and draw the chart.
     var chart = new google.visualization.PieChart(document.getElementById('grafico5'));
