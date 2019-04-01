@@ -1,4 +1,4 @@
-let celeste = '#4CC4CE';
+﻿let celeste = '#4CC4CE';
 let cian = '#2CBEC9';
 let red = '#EE6A5A';
 let gray = '#939393';
@@ -203,7 +203,8 @@ let grafico3_options = {
     },
     height: 400,
     tooltip: { isHtml: true },
-    pieSliceText: 'value',
+    series: { 0: { color: celeste } },
+    //pieSliceText: 'value',
     vAxis: {
         textStyle:
         {
@@ -246,7 +247,7 @@ function grafico3_2004() {
 
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2004'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2004'));
     chart.draw(data, grafico3_options);
 }
 
@@ -273,7 +274,7 @@ function grafico3_2005() {
 
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2005'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2005'));
     chart.draw(data, grafico3_options);
 }
 
@@ -300,7 +301,7 @@ function grafico3_2006() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2006'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2006'));
     chart.draw(data, grafico3_options);
 }
 
@@ -325,7 +326,7 @@ function grafico3_2007() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2007'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2007'));
     chart.draw(data, grafico3_options);
 }
 
@@ -350,7 +351,7 @@ function grafico3_2008() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2008'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2008'));
     chart.draw(data, grafico3_options);
 }
 
@@ -375,7 +376,7 @@ function grafico3_2009() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2009'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2009'));
     chart.draw(data, grafico3_options);
 }
 
@@ -400,7 +401,7 @@ function grafico3_2010() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2010'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2010'));
     chart.draw(data, grafico3_options);
 }
 
@@ -425,7 +426,7 @@ function grafico3_2011() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2011'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2011'));
     chart.draw(data, grafico3_options);
 }
 
@@ -450,7 +451,7 @@ function grafico3_2012() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2012'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2012'));
     chart.draw(data, grafico3_options);
 }
 
@@ -475,7 +476,7 @@ function grafico3_2013() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2013'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2013'));
     chart.draw(data, grafico3_options);
 }
 
@@ -500,7 +501,7 @@ function grafico3_2014() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2014'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2014'));
     chart.draw(data, grafico3_options);
 }
 
@@ -525,7 +526,7 @@ function grafico3_2017() {
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2017'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_2017'));
     chart.draw(data, grafico3_options);
 }
 
@@ -564,7 +565,7 @@ function grafico3_total() {
             }
         },
         chartArea: {
-            width: '100%',
+            width: '90%',
             height: '90%'
         },
         sliceVisibilityThreshold: 0.03,
@@ -587,11 +588,13 @@ function grafico3_total() {
                 fontName: 'Tisa Pro',
                 fontSize: 16
             }
-        }
+        },
+	bars: 'horizontal',
+        series: { 0: { color: celeste } }
     };
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico3_total'));
+    var chart = new google.charts.Bar(document.getElementById('grafico3_total'));
     chart.draw(data, options);
 }
 
@@ -677,7 +680,7 @@ function chart5() {
             }
         },
         chartArea: {
-            width: '100%',
+            width: '90%',
             height: '90%'
         },
         pieSliceText: 'value',
@@ -699,11 +702,13 @@ function chart5() {
                 fontSize: 16
             }
         },
-        height: 400
+        height: 400,
+	bars: 'horizontal',
+	series: { 0: { color: celeste }, 1: { color: red} }
 
     };
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico5'));
+    var chart = new google.charts.Bar(document.getElementById('grafico5'));
     chart.draw(data, options);
 }
 
