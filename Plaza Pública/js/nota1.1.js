@@ -203,8 +203,8 @@ let grafico3_options = {
     },
     height: 400,
     tooltip: { isHtml: true },
-    series: { 0: { color: celeste } },
-    //pieSliceText: 'value',
+    colors: [celeste, red, gray, text],
+    pieSliceText: 'percentage',
     vAxis: {
         textStyle:
         {
@@ -228,7 +228,7 @@ function grafico3_2004() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
+        /*['CONDOR S.A.', 0],
         ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
@@ -240,14 +240,14 @@ function grafico3_2004() {
         ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
         ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
         ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 0],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 158200],
+        ['TAURUS S.A.', 0],*/
+        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 158200]
     ]);
 
 
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2004'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2004'));
     chart.draw(data, grafico3_options);
 }
 
@@ -256,25 +256,25 @@ function grafico3_2005() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
-        ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
-        ['CORPORACION POLIMAYA S.A.', 0],
-        ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
+        //['CONDOR S.A.', 0],
+        //['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
+        //['CORPORACION POLIMAYA S.A.', 0],
+        //['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
         ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 351456],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
+        //['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
         ['SIS S.A.', 13055205],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 433800],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 0],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        //['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 433800]
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        //['TAURUS S.A.', 0],
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2005'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2005'));
     chart.draw(data, grafico3_options);
 }
 
@@ -284,24 +284,24 @@ function grafico3_2006() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
+        //['CONDOR S.A.', 0],
         ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 3379200],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
-        ['CORPORACION POLIMAYA S.A.', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
+        //['CORPORACION POLIMAYA S.A.', 0],
         ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 2980800],
         ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 642432],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
-        ['SIS S.A.', 595000],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 0],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        //['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
+        ['SIS S.A.', 595000]
+        //['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        //['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        //['TAURUS S.A.', 0],
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2006'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2006'));
     chart.draw(data, grafico3_options);
 }
 
@@ -309,24 +309,24 @@ function grafico3_2007() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
+        //['CONDOR S.A.', 0],
         ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 3801600],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
-        ['CORPORACION POLIMAYA S.A.', 0],
-        ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
-        ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
-        ['SIS S.A.', 7095600],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 0],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
+        //['CORPORACION POLIMAYA S.A.', 0],
+        //['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
+        //['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
+        //['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
+        ['SIS S.A.', 7095600]
+        //['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        //['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        //['TAURUS S.A.', 0],
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2007'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2007'));
     chart.draw(data, grafico3_options);
 }
 
@@ -334,24 +334,24 @@ function grafico3_2008() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
-        ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
-        ['CORPORACION POLIMAYA S.A.', 0],
-        ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
-        ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
+        //['CONDOR S.A.', 0],
+        //['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
+        //['CORPORACION POLIMAYA S.A.', 0],
+        //['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
+        //['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
+        //['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
         ['SIS S.A.', 225000],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 0],
+        //['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        //['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        //['TAURUS S.A.', 0],
         ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2008'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2008'));
     chart.draw(data, grafico3_options);
 }
 
@@ -359,24 +359,24 @@ function grafico3_2009() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
-        ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
+        //['CONDOR S.A.', 0],
+        //['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 747500],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
-        ['CORPORACION POLIMAYA S.A.', 0],
-        ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
-        ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
-        ['SIS S.A.', 19101090],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 816750],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
+        //['CORPORACION POLIMAYA S.A.', 0],
+        //['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
+        //['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
+        //['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
+        //['SIS S.A.', 19101090],
+        //['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        //['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        ['TAURUS S.A.', 816750]
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2009'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2009'));
     chart.draw(data, grafico3_options);
 }
 
@@ -384,24 +384,24 @@ function grafico3_2010() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
-        ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
+        //['CONDOR S.A.', 0],
+        //['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
         ['CORPORACION POLIMAYA S.A.', 715000],
-        ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
-        ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
-        ['SIS S.A.', 0],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 2543400],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        //['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
+        //['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
+        //['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
+        //['SIS S.A.', 0],
+        //['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        //['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        ['TAURUS S.A.', 2543400]
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2010'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2010'));
     chart.draw(data, grafico3_options);
 }
 
@@ -409,7 +409,7 @@ function grafico3_2011() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
+        /*['CONDOR S.A.', 0],
         ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
@@ -417,16 +417,16 @@ function grafico3_2011() {
         ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
         ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
         ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
-        ['SIS S.A.', 0],
+        ['SIS S.A.', 0],*/
         ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 480000],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 3445200],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        //['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        ['TAURUS S.A.', 3445200]
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2011'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2011'));
     chart.draw(data, grafico3_options);
 }
 
@@ -434,7 +434,7 @@ function grafico3_2012() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
+        /*['CONDOR S.A.', 0],
         ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
@@ -443,15 +443,15 @@ function grafico3_2012() {
         ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
         ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
         ['SIS S.A.', 0],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],*/
         ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 171360],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 78500],
-        ['TAURUS S.A.', 0],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        ['STAFF DE SEGURIDAD GEVAS S.A.', 78500]
+        //['TAURUS S.A.', 0],
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2012'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2012'));
     chart.draw(data, grafico3_options);
 }
 
@@ -459,7 +459,7 @@ function grafico3_2013() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
+        /*['CONDOR S.A.', 0],
         ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
@@ -468,15 +468,15 @@ function grafico3_2013() {
         ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
         ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
         ['SIS S.A.', 0],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],*/
         ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 276000],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 74000],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        ['TAURUS S.A.', 74000]
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2013'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2013'));
     chart.draw(data, grafico3_options);
 }
 
@@ -485,23 +485,23 @@ function grafico3_2014() {
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
         ['CONDOR S.A.', 267000],
-        ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
-        ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
+        //['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
+        //['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 720000],
-        ['CORPORACION POLIMAYA S.A.', 0],
-        ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
-        ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
-        ['SIS S.A.', 0],
-        ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
-        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 276000],
-        ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
-        ['TAURUS S.A.', 0],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        //['CORPORACION POLIMAYA S.A.', 0],
+        //['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
+        //['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
+        //['SERVICIOS DE SEGURIDAD ORION, S.A.', 0],
+        //['SIS S.A.', 0],
+        //['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
+        ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 276000]
+        //['STAFF DE SEGURIDAD GEVAS S.A.', 0],
+        //['TAURUS S.A.', 0],
+        //['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2014'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2014'));
     chart.draw(data, grafico3_options);
 }
 
@@ -509,24 +509,24 @@ function grafico3_2017() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Empresa', 'Contratos'],
-        ['CONDOR S.A.', 0],
+        /*['CONDOR S.A.', 0],
         ['CONSULTORES DE SEGURIDAD Y VIGILANCIA S.A.', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA', 0],
         ['CORPORACION DE SISTEMA ORGANIZADO DE VIGILANCIA S.A.', 0],
         ['CORPORACION POLIMAYA S.A.', 0],
         ['CUERPO PROFESIONAL DE SEGURIDAD S.A.', 0],
-        ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],
-        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 72000],
-        ['SIS S.A.', 0],
+        ['PROFESIONALES DE SERVICIOS DE SEGURIDAD S.A.', 0],*/
+        ['SERVICIOS DE SEGURIDAD ORION, S.A.', 72000]
+        /*['SIS S.A.', 0],
         ['SISTEMAS GLOBALES DE SEGURIDAD S.A.', 0],
         ['SISTEMAS PROFESIONALES DE SEGURIDAD S.A.', 0],
         ['STAFF DE SEGURIDAD GEVAS S.A.', 0],
         ['TAURUS S.A.', 0],
-        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]
+        ['UNIDAD DE SEGURIDAD Y SERVICIOS INTEGRALES S.A.', 0]*/
     ]);
 
     // Instantiate and draw the chart.
-    var chart = new google.charts.Bar(document.getElementById('grafico3_2017'));
+    var chart = new google.visualization.PieChart(document.getElementById('grafico3_2017'));
     chart.draw(data, grafico3_options);
 }
 
@@ -557,6 +557,7 @@ function grafico3_total() {
             fillOpacity: 0
         },
         legend: {
+            position: 'none',
             textStyle:
             {
                 color: text,
@@ -578,7 +579,7 @@ function grafico3_total() {
             {
                 color: text,
                 fontName: 'Tisa Pro',
-                fontSize: 16
+                fontSize: 12
             }
         },
         hAxis: {
@@ -586,16 +587,16 @@ function grafico3_total() {
             {
                 color: text,
                 fontName: 'Tisa Pro',
-                fontSize: 16
+                fontSize: 12
             }
         },
-	bars: 'horizontal',
+	bars: 'vertical',
         series: { 0: { color: celeste } }
     };
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico3_total'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 
@@ -623,15 +624,16 @@ function chart4() {
             {
                 color: text,
                 fontName: 'Tisa Pro',
-                fontSize: 16
+                fontSize: 12
             }
         },
         hAxis: {
+            title: '',
             textStyle:
             {
                 color: text,
                 fontName: 'Tisa Pro',
-                fontSize: 16
+                fontSize: 12
             }
         },
         bars: 'vertical',
@@ -641,7 +643,7 @@ function chart4() {
     };
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico4'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 
@@ -660,10 +662,10 @@ function chart5() {
         ['PROTECCION TOTAL, S.A.', 2, 0],
         ['SAFARI SEGURIDAD, S.A.', 3, 0],
         ['SECURITY PROFESSIONAL SYSTEMS, S.A.', 3, 0],
-        ['SEGURIDAD 2614, S.A.', 1, 0],
-        ['SERVICIO DE SEGURIDAD INTEGRAL, S.A.', 13, 1],
         ['SISTEMAS DE SEGURIDAD', 1, 0],
-        ['VIGILANCIA Y SEGURIDAD EMPRESARIAL DE GUATEMALA', 1, 0]
+        ['SERVICIO DE SEGURIDAD INTEGRAL, S.A.', 13, 1],
+        ['VIGILANCIA Y SEGURIDAD EMPRESARIAL DE GUATEMALA', 1, 0],
+        ['SEGURIDAD 2614, S.A.', 1, 0]
     ]);
 
 
@@ -672,6 +674,7 @@ function chart5() {
             //title: 'Los contratistas de las empresas con acuerdo',
         },
         legend: {
+            position: 'none',
             textStyle:
             {
                 color: text,
@@ -691,10 +694,11 @@ function chart5() {
             {
                 color: text,
                 fontName: 'Tisa Pro',
-                fontSize: 16
+                fontSize: 12
             }
         },
         hAxis: {
+            title: '',
             textStyle:
             {
                 color: text,
@@ -703,13 +707,13 @@ function chart5() {
             }
         },
         height: 400,
-	bars: 'horizontal',
+	bars: 'vertical',
 	series: { 0: { color: celeste }, 1: { color: red} }
 
     };
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico5'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 

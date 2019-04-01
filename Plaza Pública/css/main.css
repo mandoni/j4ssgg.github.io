@@ -52,9 +52,15 @@ hr {
 
 .n-column {
     margin: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     flex-basis: calc(33% - 30px);
+    transition: 1s;
+}
+
+.n-column:hover {
+    padding: 5px;
 }
 
 .autor {
@@ -210,9 +216,13 @@ tr td:first-child {
 
 .parrafo-2::first-letter {
     font-weight: bold;
-    padding: 2px 11px 2px 11px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 5px;
     margin-right: 0.5rem;
-    font-size: 250%;
+    font-size: 220%;
     background-color: var(--first-letter-color);
     color: white;
     float: left;
