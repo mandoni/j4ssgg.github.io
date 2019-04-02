@@ -299,7 +299,7 @@ function chart2() {
             }
         },
         bars: 'vertical',
-        series: { 0: { color: red } },
+        series: { 0: { color: celeste } },
         tooltip: { isHtml: true },
         height: 400
     };

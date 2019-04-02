@@ -126,15 +126,16 @@ function chart1() {
 
     var options = {
         //title: 'Las más denunciadas',
-        height: 450,
+        height: 550,
         maxLines: 50,
         tooltip: { isHtml: true },
         chartArea: {
             width: '100%',
             height: '90%'
         },
+        series : { 0: {color : celeste}},
         legend: {
-            position: 'bottom',
+            position: 'none',
             textStyle:
             {
                 color: text,
@@ -160,12 +161,12 @@ function chart1() {
                 fontSize: 16
             }
         },
-        pieSliceText: 'value'
+        //pieSliceText: 'value'
     };
 
     // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('grafico1'));
-    chart.draw(data, (options));
+    var chart = new google.charts.Bar(document.getElementById('grafico1'));
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 /* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */

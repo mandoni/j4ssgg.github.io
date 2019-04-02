@@ -238,13 +238,13 @@ tr td:first-child {
 
 .parrafo-2::first-letter {
     font-weight: bold;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 5px;
     margin-right: 0.5rem;
-    font-size: 220%;
+    font-size: 30px;
     background-color: var(--first-letter-color);
     color: white;
     float: left;

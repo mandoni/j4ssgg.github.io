@@ -187,7 +187,7 @@ function chart2() {
     var options = {
         //title: '¿Cuántas armas legales?',
         bars: 'vertical',
-        series: { 0: { color: red } },
+        series: { 0: { color: celeste } },
         chartArea: {
             width: '100%',
             height: '90%'
