@@ -43,9 +43,8 @@
 }
 
 .bar-bottom-image {
-    display: inline-flex;
-    vertical-align: middle;
-    margin: 0 auto;
+    display: inline;
+    justify-content: center;
     padding-bottom: 1rem;
     padding-top: 0.7rem;
 }
@@ -54,15 +53,20 @@
     width: 5rem;
 }
 
-
 .bar-bottom-image:nth-child(2) {
-    width: 12rem;
+    width: 3rem;
 }
 
 
 .bar-bottom-image:nth-child(3) {
+    width: 12rem;
+}
+
+
+.bar-bottom-image:nth-child(4) {
     width: 4rem;
 }
+
 
 .none {
     background-color: rgba(red, green, blue, 0);
