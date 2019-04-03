@@ -53,16 +53,12 @@ hr {
 
 .n-column {
     margin: 15px;
-    padding: 10px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     flex-basis: calc(33% - 30px);
-    transition: 1s;
 }
 
-.n-column:hover {
-    padding: 5px;
-}
 
 .column-autor {
     margin: 0 50px;
@@ -86,9 +82,11 @@ hr {
     margin: 0 auto;
     background-color: white;
 }
+
 .autor span:first-of-type {
     margin-top: 10px;
 }
+
 .autor span:last-of-type {
     margin-bottom: 10px;
 }
@@ -97,7 +95,7 @@ hr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 auto;    
+    margin: 0 auto;
     justify-content: center;
 }
 
@@ -164,14 +162,14 @@ hr {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Tisa Pro';
     font-weight: normal;
     color: var(--text-color);
 }
 
 .title {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Pluto Bold';
     color: var(--text-color);
 }
@@ -209,16 +207,20 @@ table {
     font-family: 'Tisa Pro';
     font-weight: normal;
     color: var(--text-color);
+    
 }
 
-thead{
+thead {
     font-size: 18px;
     font-family: 'Pluto Bold';
     text-transform: uppercase;
-    text-align: center; 
+    text-align: center;
+}
+td {
+    text-align: left;
 }
 
-tr td:first-child {
+tr td:last-child {
     text-align: center;
 }
 
@@ -252,7 +254,6 @@ tr td:first-child {
 
 .titulo {
     font-family: 'Pluto Bold';
-    font-weight: bold;
 }
 
 .titulo-2 {
@@ -266,6 +267,11 @@ tr td:first-child {
     font-size: 34px;
     line-height: 44px;
     padding-top: 3rem;
+}
+
+.cita-2 {
+    font-family: 'Tisa Pro';
+    font-size: 20px;
 }
 
 .cita-w {
@@ -301,8 +307,33 @@ a:hover {
     color: var(--text-background-color);
 }
 
-.dropdown a{
+.dropdown a {
     color: var(--text-color) !important;
+}
+
+.map {
+    display: inline-block;
+    max-width: 90%;
+    height: auto;
+    width: 47%;
+    margin: 1%;
+}
+
+.portada {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    top: 0;
+}
+
+.portada img {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
 }
 
 /*Tablets */
@@ -350,6 +381,7 @@ a:hover {
     }
     .n-column {
         flex-basis: calc(33% - 30px);
+        padding: 8px;
     }
     .column-autor {
         margin: 0 10px;
@@ -357,6 +389,15 @@ a:hover {
     }
     .carousel-pd {
         padding: 0;
+    }
+    .portada {
+        overflow: visible;
+        height:  auto;
+    }
+    
+    .portada img {
+        position: initial;
+        width: 100%;
     }
 }
 
@@ -390,16 +431,13 @@ a:hover {
         margin-left: 1rem;
         margin-right: 1rem;
     }
-
     .p-5 {
         padding: 0.5rem!important;
     }
-
     .px-5 {
         padding-left: 0.5rem!important;
         padding-right: 0.5rem !important;
     }
-
     .pd-x {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -417,8 +455,17 @@ a:hover {
     }
     .n-column {
         flex-basis: 100%;
-    }   
+        padding: 25px;
+    }
     .carousel-pd {
         padding: 0;
+    }
+    .map {
+        width: 90%;
+        align-content: center;
+    }
+    .column-autor {
+        margin: 0  auto;
+        flex-basis: 100%;
     }
 }
