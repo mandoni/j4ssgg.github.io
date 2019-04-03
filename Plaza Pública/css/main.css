@@ -336,6 +336,31 @@ a:hover {
     margin: auto;
 }
 
+.menu-2 {
+    width: auto;
+    font-family: "Pluto Bold" !important;
+}
+
+.a {    
+    font-family: "Tisa Pro" !important;
+    font-size: 15px;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.dropdown-2-content {
+    display: initial;
+}
+
+.dropdown-2-content p {
+    padding-bottom:0;
+    margin: 0; 
+}
+
+.dropdown-2:hover  .dropdown-2-content  {
+    display: initial;
+}
+
 /*Tablets */
 
 @media only screen and (max-width: 1280px) {
@@ -467,5 +492,16 @@ a:hover {
     .column-autor {
         margin: 0  auto;
         flex-basis: 100%;
+    }
+
+    .menu-2{
+        position: absolute;
+        width: 100%;
+    }
+    .dropdown-2-content {
+        display: initial;
+    }
+    .a {    
+        font-size: 13px;
     }
 }
