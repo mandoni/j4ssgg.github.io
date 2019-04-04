@@ -4,6 +4,7 @@
     --text-background-color: #ABE3E8;
     --text-color: #333333;
     --bar-color: #939393;
+    --text-color-red: #EE6A5A;
 }
 
 @font-face {
@@ -360,6 +361,38 @@ a:hover {
 .dropdown-2:hover  .dropdown-2-content  {
     display: initial;
 }
+
+/* CONTADOR */
+
+.contador-titulo {
+    font-family: 'Pluto Bold';
+    font-size: 8vw;
+    word-wrap: none;
+    text-align: center;
+}
+
+.titulo-gt { 
+    color: var(--text-color);
+}
+
+.titulo-bala {
+    color: var(--text-color-red);
+}
+
+
+.contador-texto {
+    font-family: 'Tisa Pro';
+    font-size: 2vw;
+    word-wrap: none;
+    padding: 0 5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.balas {
+    color: var(--text-color-red);
+}
+
 
 /*Tablets */
 
