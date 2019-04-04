@@ -457,6 +457,15 @@ a:hover {
         position: initial;
         width: 100%;
     }
+
+    .contador-titulo {
+        font-size: 12vw;
+    }
+
+    .contador-texto {
+        font-size: 3vw;
+        padding: 0 10rem;
+    }
 }
 
 /*Smartphones*/
@@ -536,5 +545,14 @@ a:hover {
     }
     .a {    
         font-size: 13px;
+    }
+
+    .contador-titulo {
+        font-size: 14vw;
+    }
+
+    .contador-texto {
+        font-size: 4vw;
+        padding: 0 3rem;
     }
 }
