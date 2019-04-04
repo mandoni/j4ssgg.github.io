@@ -81,7 +81,6 @@ hr {
     width: 175px;
     height: 175px;
     margin: 0 auto;
-    background-color: white;
 }
 
 .autor span:first-of-type {
@@ -161,6 +160,11 @@ hr {
     padding-left: 24rem;
     padding-right: 24rem;
 }
+.item img {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 
 p {
     font-size: 16px;
@@ -241,13 +245,13 @@ tr td:last-child {
 
 .parrafo-2::first-letter {
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 5px;
     margin-right: 0.5rem;
-    font-size: 30px;
+    font-size: 35px;
     background-color: var(--first-letter-color);
     color: white;
     float: left;
@@ -338,13 +342,13 @@ a:hover {
 }
 
 .menu-2 {
-    width: auto;
+    width: 400px;
     font-family: "Pluto Bold" !important;
 }
 
 .a {    
     font-family: "Tisa Pro" !important;
-    font-size: 15px;
+    font-size: 16px;
     white-space: pre-wrap;
     text-align: left;
 }
