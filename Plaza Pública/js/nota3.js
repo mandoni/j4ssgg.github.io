@@ -214,13 +214,30 @@ function chart2() {
             height: '90%'
         },
         series: { 0: { color: red } },
-        legend: { position: 'none' }
+        legend: { position: 'none' },
+        vAxis: {
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 12
+                }
+        },
+        hAxis: {
+            title: '',
+            textStyle:
+                {
+                    color: text,
+                    fontName: 'Tisa Pro',
+                    fontSize: 12
+                }
+        },
 
     };
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico2'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 
@@ -261,15 +278,16 @@ function chart3() {
                 {
                     color: text,
                     fontName: 'Tisa Pro',
-                    fontSize: 16
+                    fontSize: 12
                 }
         },
         hAxis: {
+            title: '',
             textStyle:
                 {
                     color: text,
                     fontName: 'Tisa Pro',
-                    fontSize: 16
+                    fontSize: 12
                 }
         },
 
@@ -277,7 +295,7 @@ function chart3() {
 
     // Instantiate and draw the chart.
     var chart = new google.charts.Bar(document.getElementById('grafico3'));
-    chart.draw(data, options);
+    chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
 /* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */

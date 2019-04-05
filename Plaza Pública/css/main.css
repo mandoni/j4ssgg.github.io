@@ -165,6 +165,10 @@ hr {
     margin: 0 auto;
 }
 
+.item p{
+    max-width: 80%;
+    margin: 0 auto;
+}
 
 p {
     font-size: 16px;
@@ -203,7 +207,7 @@ p {
 
 .mensaje {
     font-family: 'Pluto Bold';
-    font-size: 34px;
+    font-size: 28px;
     line-height: 44px;
 }
 
@@ -295,6 +299,7 @@ tr td:last-child {
 }
 
 .carousel-mensaje {
+   
     overflow: hidden;
     text-align: center;
 }
@@ -302,6 +307,8 @@ tr td:last-child {
 .graph {
     border-top: 3px solid var(--bar-color);
     border-bottom: 3px solid var(--bar-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 a:link, a:visited {
@@ -310,6 +317,7 @@ a:link, a:visited {
 
 a:hover {
     color: var(--text-background-color);
+    text-decoration: none;
 }
 
 .dropdown a {
@@ -386,7 +394,7 @@ a:hover {
 
 .contador-texto {
     font-family: 'Tisa Pro';
-    font-size: 2vw;
+    font-size: 1.5vw;
     word-wrap: none;
     padding: 0 5rem;
     text-align: center;
@@ -467,7 +475,7 @@ a:hover {
     }
 
     .contador-texto {
-        font-size: 3vw;
+        font-size: 2.5vw;
         padding: 0 10rem;
     }
 }

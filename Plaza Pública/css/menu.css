@@ -65,6 +65,18 @@
 }
 
 
+.bar-bottom-image:nth-child(1):hover {
+    cursor: pointer;
+}
+
+.bar-bottom-image:nth-child(3):hover {
+    cursor: pointer;
+}
+
+.bar-bottom-image:nth-child(4):hover {
+    cursor: pointer;
+}
+
 .none {
     background-color: rgba(red, green, blue, 0);
     border: none;
@@ -113,7 +125,13 @@ img, video {
     width: 100%;
 }
 
+.dropdown-item p {
+    border-bottom: 1.5px solid #e3e3e3;
+}
 
+.dropdown-item:last-of-type p{
+    border-bottom: 0px;
+}
 
 
 /*Tablets */
