@@ -3,7 +3,10 @@ let cian = '#2CBEC9';
 let red = '#EE6A5A';
 let gray = '#939393';
 let text = '#333333';
-
+let chocolate = '#1a1a1a';
+let rose = '#f3cfce';
+let brown = '#7c2902';
+let ocean = '#02737c';
 
 function image1() {
     // Define the chart to be drawn.
@@ -171,7 +174,7 @@ function chart2() {
             }
         },
         bars: 'horizontal',
-        series: { 0: { color: gray }, 1: { color: celeste }, 2: { color: red } },
+        series: { 0: { color: celeste }, 1: { color: red }, 2: { color: ocean } },
         tooltip: { isHtml: true },
         bar: { groupWidth: 85 },
         height: 1000
@@ -203,7 +206,7 @@ let grafico3_options = {
     },
     height: 400,
     tooltip: { isHtml: true },
-    colors: [celeste, red, gray, text],
+    colors: [celeste, red, ocean, brown],
     pieSliceText: 'percentage',
     vAxis: {
         textStyle:
@@ -650,9 +653,9 @@ function chart4() {
 function chart5() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
-        ['Empresas', 'Sí', 'Sí, y más con mismos apellidos'],
-        ['ALARMAS DE GUATEMALA, S.A.', 2, 1],
+        ['Empresas', 'Sí', 'Sí, y más con mismos apellidos'],    
         ['ALFA UNO, S.A', 1, 0],
+        ['ALARMAS DE GUATEMALA, S.A.', 2, 1],
         ['BLACKTHORNE SECURITY, S.A.', 1, 0],
         ['CORPORACION DE SEGURIDAD COMANDO SUR, S.A.', 1, 0],
         ['EMPRESA DE SEGURIDAD PARTICULAR ELITE, S.A.', 2, 0],
@@ -703,7 +706,7 @@ function chart5() {
             {
                 color: text,
                 fontName: 'Tisa Pro',
-                fontSize: 16
+                fontSize: 12
             }
         },
         height: 400,

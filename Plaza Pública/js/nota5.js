@@ -178,6 +178,11 @@ let gray = '#939393';
 let text = '#333333';
 
 
+let chocolate = '#1a1a1a';
+let rose = '#f3cfce';
+let brown = '#7c2902';
+let ocean = '#02737c';
+
 
 function chart1() {
     // Define the chart to be drawn.
@@ -223,7 +228,7 @@ function chart1() {
         },
         //bar: { groupWidth: '75%' },
         //isStacked: true,
-        colors: [celeste, red, gray, 'yellow', 'purple', 'darkgray'],
+        colors: [red, celeste, gray, rose, ocean, brown],
         bars: 'horizontal',
         bar: { groupWidth: 100 },
         height: 1200,

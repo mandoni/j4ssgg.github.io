@@ -155,6 +155,12 @@ let gray = '#939393';
 let text = '#333333';
 
 
+
+let chocolate = '#1a1a1a';
+let rose = '#f3cfce';
+let brown = '#7c2902';
+let ocean = '#02737c';
+
 function chart1() {
 
     // Define the chart to be drawn.
