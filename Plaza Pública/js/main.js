@@ -29,17 +29,3 @@ $(document).ready(function () {
 
 
 
-// Contador
-
-
-$(document).ready(function () {
-  actual = (new Date(Date.now())).getTime();
-  pub = (new Date("March 05, 2019 00:00:00")).getTime();  
-
-  var times = Math.round((actual - pub)/1000, 0);
-  var balas = document.getElementById("balas");
-  window.setInterval(function () {
-    balas.innerHTML = times;
-    times++;
-  }, 1000);
-});
