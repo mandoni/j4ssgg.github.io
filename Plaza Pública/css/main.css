@@ -60,7 +60,6 @@ hr {
     flex-basis: calc(33% - 30px);
 }
 
-
 .column-autor {
     margin: 0 50px;
     display: flex;
@@ -160,12 +159,13 @@ hr {
     padding-left: 24rem;
     padding-right: 24rem;
 }
+
 .item img {
     max-width: 90%;
     margin: 0 auto;
 }
 
-.item p{
+.item p {
     max-width: 80%;
     margin: 0 auto;
 }
@@ -216,7 +216,6 @@ table {
     font-family: 'Tisa Pro';
     font-weight: normal;
     color: var(--text-color);
-    
 }
 
 thead {
@@ -225,6 +224,7 @@ thead {
     text-transform: uppercase;
     text-align: center;
 }
+
 td {
     text-align: left;
 }
@@ -299,7 +299,6 @@ tr td:last-child {
 }
 
 .carousel-mensaje {
-   
     overflow: hidden;
     text-align: center;
 }
@@ -354,7 +353,7 @@ a:hover {
     font-family: "Pluto Bold" !important;
 }
 
-.a {    
+.a {
     font-family: "Tisa Pro" !important;
     font-size: 16px;
     white-space: pre-wrap;
@@ -366,11 +365,11 @@ a:hover {
 }
 
 .dropdown-2-content p {
-    padding-bottom:0;
-    margin: 0; 
+    padding-bottom: 0;
+    margin: 0;
 }
 
-.dropdown-2:hover  .dropdown-2-content  {
+.dropdown-2:hover .dropdown-2-content {
     display: initial;
 }
 
@@ -381,18 +380,17 @@ a:hover {
     font-size: 8vw;
     word-wrap: none;
     text-align: center;
-	padding:0;
-	margin:0;
+    padding: 0;
+    margin: 0;
 }
 
-.titulo-gt { 
+.titulo-gt {
     color: var(--text-color);
 }
 
 .titulo-bala {
     color: var(--text-color-red);
 }
-
 
 .contador-texto {
     font-family: 'Tisa Pro';
@@ -401,24 +399,24 @@ a:hover {
     padding: 0 5rem;
     text-align: center;
     color: var(--text-color);
-	
-	padding: 0 15%;
+    padding: 0 15%;
 }
 
 .balas {
     color: var(--text-color-red);
 }
+
 .contador-balas {
-	padding: 0 25%;
-	padding-bottom: 10px;
+    max-width: 350px;
+    padding-bottom: 10px;
+    margin: 0 auto;
 }
 
 .contador-balas img {
-	display:inline;
-	max-width: 30px;
-    margin-right: 5px
+    display: inline;
+    max-width: 30px;
+    margin-left: 5px
 }
-
 
 /*Tablets */
 
@@ -476,21 +474,21 @@ a:hover {
     }
     .portada {
         overflow: visible;
-        height:  auto;
+        height: auto;
     }
-    
     .portada img {
         position: initial;
         width: 100%;
     }
-
     .contador-titulo {
         font-size: 12vw;
     }
-
     .contador-texto {
         font-size: 2.5vw;
         padding: 0 10rem;
+    }
+    .contador-balas {
+        max-width: 280px;
     }
 }
 
@@ -558,33 +556,33 @@ a:hover {
         align-content: center;
     }
     .column-autor {
-        margin: 0  auto;
+        margin: 0 auto;
         flex-basis: 100%;
     }
-
-    .menu-2{
+    .menu-2 {
         position: absolute;
         width: 100%;
     }
     .dropdown-2-content {
         display: initial;
     }
-    .a {    
+    .a {
         font-size: 13px;
     }
-
     .contador-titulo {
         font-size: 14vw;
     }
-
     .contador-texto {
         font-size: 4vw;
         padding: 0 3rem;
     }
-	
-	.contador-balas img {
-	display:inline;
-	max-width: 20px;
-    margin-right: 5px
-}
+
+    .contador-balas{
+        max-width: 170px;
+    }
+
+    .contador-balas img {
+        max-width: 20px;
+        margin-right: 3px;
+    }
 }

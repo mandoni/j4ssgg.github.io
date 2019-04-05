@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 var balaDOM = "<img src='images/bala.png' class='balasC'>";
 function añadirBala(dom){
-	if (($('.balasC').length + 1) * ($('.balasC').width()) > $('.contador-balas').width() - $('.contador-balas').css('padding-left').replace("px", "")*0.45){
+	if (($('.balasC').length + 1) * ($('.balasC').width() +5)> $('.contador-balas').width()){
 		dom.html('');
 	}
 	dom.append(balaDOM);
