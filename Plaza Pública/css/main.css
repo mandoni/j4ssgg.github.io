@@ -418,6 +418,11 @@ a:hover {
     margin-left: 5px
 }
 
+.video {
+    height: 600px;
+    margin-bottom: 75px;
+}
+
 /*Tablets */
 
 @media only screen and (max-width: 1280px) {
@@ -498,6 +503,10 @@ a:hover {
     text {
         font-size: 8px;
     }
+    .fecha {
+        font-size: 12px;
+        font-family: 'Tisa Pro';
+    }
     .cita {
         font-size: 20px;
         line-height: 30px;
@@ -542,11 +551,11 @@ a:hover {
         max-width: 15em;
     }
     .autor {
-        padding: 3rem;
+        padding: 1rem;
     }
     .n-column {
         flex-basis: 100%;
-        padding: 25px;
+        padding: 5px;
     }
     .carousel-pd {
         padding: 0;
@@ -576,13 +585,16 @@ a:hover {
         font-size: 4vw;
         padding: 0 3rem;
     }
-
-    .contador-balas{
+    .contador-balas {
         max-width: 170px;
     }
-
     .contador-balas img {
         max-width: 20px;
         margin-right: 3px;
+    }
+    .video {
+        width: 100% !important;
+        height: auto;
+        margin-bottom: 25px;
     }
 }
