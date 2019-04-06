@@ -228,7 +228,7 @@ function chart1() {
         },
         //bar: { groupWidth: '75%' },
         //isStacked: true,
-        colors: [red, celeste, gray, rose, ocean, brown],
+        colors: [brown, red, cian, ocean, rose, '#1a1a1a'],
         bars: 'horizontal',
         bar: { groupWidth: 100 },
         height: 1200,
