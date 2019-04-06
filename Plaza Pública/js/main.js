@@ -1,9 +1,9 @@
 $(function(){
   if ($(window).width() > 1280){
-    document.getElementById("animacion").src = "images/desktop.mp4"; 
+    document.getElementById("animacion").src = "images/desktop.mp4#t=2"; 
   }
   else{
-    document.getElementById("animacion").src = "images/mobile.webm"; 
+    document.getElementById("animacion").src = "images/mobile.webm#t=2"; 
   }
 });
 
