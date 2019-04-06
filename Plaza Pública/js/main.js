@@ -1,4 +1,11 @@
-
+$(function(){
+  if ($(window).width() > 1280){
+    document.getElementById("animacion").src = "images/desktop.mp4"; 
+  }
+  else{
+    document.getElementById("animacion").src = "images/mobile.webm"; 
+  }
+});
 
 $(document).ready(function () {
   $('#carousel').slick({
@@ -29,11 +36,3 @@ $(document).ready(function () {
 
 
 
-$(function(){
-  if ($(window).width() > 1280){
-    document.getElementById("animacion").src = "images/desktop.mp4"; 
-  }
-  else{
-    document.getElementById("animacion").src = "images/mobile.webm"; 
-  }
-});
