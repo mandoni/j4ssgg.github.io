@@ -419,8 +419,21 @@ a:hover {
 }
 
 .video {
-    height: 600px;
-    margin-bottom: 75px;
+    position: relative;
+    z-index: 0;
+    height: auto;
+    padding: 0;    
+    margin-bottom: 0px;
+}
+
+.muted i{
+    position: absolute;
+    top: 75px;
+    right: 25px;
+    z-index: 1;
+    font-size: 20px;
+
+    color: white;
 }
 
 /*Tablets */
@@ -495,6 +508,13 @@ a:hover {
     .contador-balas {
         max-width: 280px;
     }
+/*
+    .video {
+        width: auto !important;
+        height: 480px;
+        margin-bottom: 25px;
+    }
+    */
 }
 
 /*Smartphones*/
@@ -593,8 +613,9 @@ a:hover {
         margin-right: 3px;
     }
     .video {
-        width: 100% !important;
-        height: auto;
+        width: auto !important;
+        height: 600px;
         margin-bottom: 25px;
+        margin-left: -300px;
     }
 }
