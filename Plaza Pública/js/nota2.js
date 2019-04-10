@@ -94,7 +94,7 @@ function chart1() {
     // Define the chart to be drawn.
     var data = google.visualization.arrayToDataTable([
         ['Entidad', 'Denuncias'],
-        ['Grupo Escorpión, S.A.', 613],
+        ['Grupo Escorpión, S.A.', 631],
         ['Protección Total, S.A.', 367],
         ['Vigilancia Y Seguridad Empresarial De Guatemala (VISEGUA), S.A.', 356],
         ['Alarmas De Guatemala, S.A.', 184],

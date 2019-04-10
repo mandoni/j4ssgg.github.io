@@ -76,9 +76,9 @@ hr {
 }
 
 .autor div {
-    padding: 10px;
-    width: 175px;
-    height: 175px;
+    padding: 15px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
 }
 
@@ -153,6 +153,10 @@ hr {
     margin-right: auto;
 }
 
+
+.carousel {
+    max-width: 750px !important;
+}
 .carousel-pd {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -349,7 +353,7 @@ a:hover {
 }
 
 .menu-2 {
-    width: 400px;
+    width: 500px;
     font-family: "Pluto Bold" !important;
 }
 
@@ -434,6 +438,11 @@ a:hover {
     font-size: 20px;
 
     color: white;
+}
+
+
+.mobile {
+    display: none;
 }
 
 /*Tablets */
@@ -571,11 +580,11 @@ a:hover {
         max-width: 15em;
     }
     .autor {
-        padding: 1rem;
+        padding: 0 1rem;
     }
     .n-column {
         flex-basis: 100%;
-        padding: 5px;
+        padding: 15px;
     }
     .carousel-pd {
         padding: 0;
@@ -613,9 +622,15 @@ a:hover {
         margin-right: 3px;
     }
     .video {
-        width: auto !important;
-        height: 600px;
+        width: 100%;
         margin-bottom: 25px;
-        margin-left: -300px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
     }
 }

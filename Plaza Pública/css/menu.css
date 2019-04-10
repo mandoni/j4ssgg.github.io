@@ -1,6 +1,7 @@
 :root {
     --menu-color: #F2F2F2;
-    --menu-color-2: #333333;
+    --menu-color-2: #333333;    
+    --text-color-red: #EE6A5A;
 }
 .divider{
     background-color: #e3e3e3;
@@ -34,14 +35,22 @@
     line-height: 50px;
     left: 0;
     width: 20px;
-    color: var(--icon-color);
+    color: var(--menu-color-2);
     cursor: pointer;
+}
+.fa, .fab {
+    text-align: center;
 }
 
 .social{
-    float: right;
-    margin-right: 7px;
+    margin-right: 5px;
+    color: var(--menu-color);
+    background: var(--text-color-red);
+    width: 35px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
 
 .bar-bottom-image {
     justify-content: center;

@@ -4,7 +4,7 @@
 $(document).ready(function () {
   $('.fa-volume-up').hide();
   actual = (new Date(Date.now())).getTime();
-  pub = (new Date("March 05, 2019 00:00:00")).getTime();
+  pub = (new Date("March 10, 2019 00:00:00")).getTime();
 
   var times = Math.round((actual - pub) / 1000, 0);
   var balas = document.getElementById("balas");
