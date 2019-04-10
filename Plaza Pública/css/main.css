@@ -445,6 +445,12 @@ a:hover {
     display: none;
 }
 
+
+iframe {
+    width: 100%;
+    height: 480px;
+}
+
 /*Tablets */
 
 @media only screen and (max-width: 1280px) {
@@ -633,4 +639,12 @@ a:hover {
     .mobile {
         display: initial;
     }
+    
+
+    iframe {
+        width: 100%;
+        height: auto;
+        padding: 0 !important;
+    }
+    
 }
