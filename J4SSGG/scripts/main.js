@@ -33,4 +33,9 @@ $(document).ready(function(){
     window.setInterval(setTimeInto, 1000, $("#time"));
     
 
+
+    // Insert particles animation
+
+    particles = new J4("particles", false);
+    particles.draw();
 });
