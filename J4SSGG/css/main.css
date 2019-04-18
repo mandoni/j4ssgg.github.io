@@ -1,7 +1,7 @@
 :root {
-    --logo-shadow: #E82E4C;
+    --logo-shadow: #E8444D;
     --logo-color: #f9f9f9;
-    --time-color: #E82E4C;
+    --time-color: #E8444D;
     --background: #333;
 }
 
@@ -26,13 +26,12 @@ body {
 
 canvas {
     position: relative;
-    width: 100%;
-    height: 700px;
+    display: block;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: -1;
 }
 
 .parent {
