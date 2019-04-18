@@ -36,6 +36,6 @@ $(document).ready(function(){
 
     // Insert particles animation
 
-    particles = new J4("particles", false);
+    particles = new J4("particles", {dotWidth: 10});
     particles.draw();
 });

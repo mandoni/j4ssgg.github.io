@@ -10,12 +10,15 @@ let lineColor = "#E8444D";
 
 let dots = [];
 
-let amount = 90;
+let amount = 200;
 let width = 0;
 let height = 0;
-let xV = 5;
-let yV = 5;
-let size = 4;
+let xVelocity = 5;
+let yVelocity = 5;
+let dotWidth = 4;
+let lineWidth = 2;
+let highestPath = 0;
+
 
 class J4 {
 
@@ -38,14 +41,19 @@ class J4 {
         height = canvas.height;
 
 
-
         // configurations
-        if (!configuration) {
-            this.initialize();
-            return;
+        if (configuration !== undefined) {
+            dotColor = configuration.dotColor !== undefined ? configuration.dotColor: dotColor;
+            lineColor = configuration.lineColor !== undefined ? configuration.lineColor : lineColor;
+            lineWidth = configuration.lineWidth !== undefined ? configuration.lineWidth : lineWidth;
+            dotWidth = configuration.dotWidth !== undefined ? configuration.dotWidth : dotWidth;
+
+            amount = configuration.amount !== undefined ? configuration.amount : amount;
+
+            xVelocity = configuration.xVelocity !== undefined ? configuration.xVelocity:xVelocity;
+            yVelocity = configuration.yVelocity !== undefined ? configuration.yVelocity:yVelocity;
         }
-        dotColor = configuration.dotColor ? configuration.dotColor : dotColor;
-        lineColor = configuration.lineColor ? configuration.lineColor : lineColor;
+
         this.initialize();
     }
 
@@ -60,9 +68,9 @@ class J4 {
                 id: i,
                 x: Math.random() * width,
                 y: Math.random() * height,
-                vx: Math.random() * xV,
-                vy: Math.random() * yV,
-                size: this.random(1, size),
+                vx: Math.random() * xVelocity,
+                vy: Math.random() * yVelocity,
+                width: this.random(1, dotWidth),
                 neighbors: []
             })
         }
@@ -76,65 +84,65 @@ class J4 {
      * @returns {number} 
      */
     euclideanDistance(A, B) {
-        return Math.sqrt((A.x - B.x) * (A.x - B.x) + (A.y - B.y) * (A.y - B.y));
+        let result = Math.sqrt((A.x - B.x) ** 2 + (A.y - B.y) ** 2 + (A.width- B.width) ** 2);
+        if (highestPath < result) highestPath = result;
+        return result;
     }
 
 
+    /**
+     * 
+     * @param {number} min lowest value (inclusive) generated.
+     * @param {number} max highest value (exclusive) generated.
+     */
+
     random(min, max) {
-        return Math.random() * (max - min) + min;
+        return Math.random() * (max - min) + min;;
     }
 
     compare(a, b) {
-        if (a.distance < b.distance) {
-            return -1;
+        if (a.distance < b.distance) return -1;
 
-        }
-
-        if (a.distance == b.distance) {
-            return 0;
-        }
+        if (a.distance == b.distance) return 0;
 
         return 1;
     }
 
-    /**
-     * 
-     * @param {number} K number of neighbors considered
-     * 
-     */
-    neighbors(K) {
+    neighbors() {
         for (var i = 0; i < amount; i++) {
             dots[i].neighbors = [];
-            for (var j = i + 1; j < amount; j++) {
+            for (var j = 0; j < amount; j++) {
+                let path = this.euclideanDistance(dots[i], dots[j]);
+                if(path == 0) continue;
                 dots[i].neighbors.push(
                     {
-                        id: j,
-                        distance: this.euclideanDistance(dots[i], dots[j])
+                        id: dots[j].id,
+                        distance: path
                     }
                 );
             }
-            dots[i].neighbors = dots[i].neighbors.sort(this.compare).slice(0, K);
+            dots[i].neighbors.sort(this.compare);
         }
     }
 
     drawDots() {
         dots.forEach(function (dot) {
             ctx.beginPath();
-            ctx.arc(dot.x, dot.y, dot.size, 0, Math.PI * 2, false);
+            ctx.arc(dot.x, dot.y, dot.width, 0, Math.PI * 2, false);
             ctx.fillStyle = dotColor;
             ctx.fill();
         });
     }
 
-    drawLines() {
-        this.neighbors(4);
+    drawLines(K) {
+        this.neighbors();
         dots.forEach(function (dot) {
 
             ctx.beginPath();
             ctx.strokeStyle = lineColor;
 
-            dot.neighbors.forEach(function (neighbor) {
-                ctx.lineWidth = 0.25 - 1 / neighbor.distance;
+            dot.neighbors.slice(0, K).forEach(function (neighbor) {
+                ctx.lineWidth = 2 * neighbor.distance / highestPath;
                 ctx.moveTo(dot.x, dot.y);
                 ctx.lineTo(dots[neighbor.id].x, dots[neighbor.id].y);
                 ctx.stroke();
@@ -144,6 +152,6 @@ class J4 {
 
     draw() {
         return Promise.all([ctx.clearRect(0, 0, width, height),
-        this.drawLines(), this.drawDots()]);
+        this.drawLines(5), this.drawDots()]);
     }
 }
