@@ -53,5 +53,6 @@ $(document).ready(function () {
     function animate() {
         particles.animation();
     }
+    
     window.setInterval(animate, 1000 / 60);
 });
