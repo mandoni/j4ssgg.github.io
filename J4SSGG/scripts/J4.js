@@ -13,8 +13,10 @@ class J4 {
 
     constructor(canvasID, configuration) {
         this.canvas = document.getElementById(canvasID);
-        this.canvas.width = document.body.clientWidth; // fix to blur
-        this.canvas.height = window.innerHeight; // fix to blur
+        this.canvas.width = 2 * window.innerWidth; // fix to blur
+        this.canvas.height =  2 * window.innerHeight; // fix to blur
+        this.canvas.style.width = window.innerWidth; // fix to blur
+        this.canvas.style.height =  window.innerHeight; // fix to blur
         this.ctx = this.canvas.getContext("2d");
 
         this.width = this.canvas.width;

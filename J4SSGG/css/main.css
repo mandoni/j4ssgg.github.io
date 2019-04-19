@@ -1,8 +1,8 @@
 :root {
-    --logo-shadow: #E8444D;
+    --logo-shadow: #ec4b53;
     --logo-color: #f9f9f9;
-    --time-color: #E8444D;
-    --background: #695959;
+    --time-color: #ec4b53;
+    --background: #3f454d;
 }
 
 @font-face {
@@ -104,7 +104,7 @@ canvas {
     }
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 1200px) {
     .logo-name:hover {
         position: relative;
         text-shadow:  0.2rem 0.2rem var(--logo-shadow);
@@ -113,6 +113,10 @@ canvas {
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
+    }
+
+    .logo-name{
+        font-size: 10vw;
     }
     .child {
         position: absolute;
@@ -139,7 +143,7 @@ canvas {
     }
 
     .logo-name{
-        font-size: 10vw;
+        font-size: 12vw;
     }
     .child {
         position: absolute;
