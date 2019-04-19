@@ -38,21 +38,21 @@ $(document).ready(function () {
 
     particles = new J4("particles",
         {
-            amount: 100,
-            xVelocity: 0.1,
-            yVelocity: -0.1,
+            amount: 30,
+            xVelocity: 0.15,
+            yVelocity: -0.15,
             dotColor: "#BBC0B8",
             lineColor: "#8B8F89",
             dotWidth: 4,
-            lineWidth: 3,
+            lineWidth: 1,
             showLines: true,
             showDots: true,
-            size: 3
+            size: .4
         });
 
     function animate() {
         particles.animation();
     }
-    
+
     window.setInterval(animate, 1000 / 60);
 });

@@ -33,7 +33,7 @@ class J4 {
         this.xVelocity = 5;
         this.yVelocity = 5;
         this.dotWidth = 4;
-        this.lineWidth = 2;
+        this.lineWidth = 0.25;
         this.highestPath = 0;
         this.size = 3;
 
@@ -42,7 +42,7 @@ class J4 {
             if (configuration.dotColor !== undefined) this.dotColor = configuration.dotColor;
             if (configuration.lineColor !== undefined) this.lineColor = configuration.lineColor;
 
-            if (configuration.lineWidth !== undefined) this.lineWidth = configuration.lineWidth;
+            if (configuration.lineWidth !== undefined) this.lineWidth = configuration.lineWidth * 0.25;
             if (configuration.dotWidth !== undefined) this.dotWidth = configuration.dotWidth;
 
             if (configuration.amount !== undefined) this.amount = configuration.amount;
@@ -114,10 +114,13 @@ class J4 {
         return 1;
     }
 
-    neighbors() {
+    distances() {
         if (this.showLines) {
+
             for (var i = 0; i < this.amount; i++) {
                 this.dots[i].neighbors = [];
+                //this.dots[i].vx = Math.random() * this.xVelocity * this.negativeRandom();
+                //this.dots[i].vy = Math.random() * this.yVelocity * this.negativeRandom();
                 for (var j = 0; j < this.amount; j++) {
                     let path = this.euclideanDistance(this.dots[i], this.dots[j]);
                     if (path == 0) continue;
@@ -128,8 +131,10 @@ class J4 {
                 }
                 this.dots[i].neighbors.sort(this.compare);
             }
+
         }
     }
+
 
     drawDots() {
         if (this.showDots) {
@@ -150,9 +155,10 @@ class J4 {
                 this.ctx.beginPath();
                 this.ctx.strokeStyle = this.lineColor;
 
-                for (var i = 0; i < K; i++) {
+                for (var i = 0; i < this.amount; i++) {
                     let neighbor = dot.neighbors[i];
-                    this.ctx.lineWidth = this.lineWidth * neighbor.distance / this.highestPath;
+                    if (1.75 * neighbor.distance / this.highestPath > K) break;
+                    this.ctx.lineWidth = this.lineWidth * (K - neighbor.distance / this.highestPath);
                     this.ctx.moveTo(dot.x, dot.y);
                     this.ctx.lineTo(this.dots[neighbor.id].x, this.dots[neighbor.id].y);
                     this.ctx.stroke();
@@ -195,7 +201,7 @@ class J4 {
 
     animation() {
         this.clear();
-        this.neighbors();
+        this.distances();
         this.drawLines(this.size);
         this.drawDots();
         this.updatePosition();
