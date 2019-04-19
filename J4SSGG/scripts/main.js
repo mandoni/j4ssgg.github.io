@@ -38,16 +38,16 @@ $(document).ready(function () {
 
     particles = new J4("particles",
         {
-            amount: 30,
+            amount: 50,
             xVelocity: 0.15,
             yVelocity: -0.15,
-            dotColor: "#BBC0B8",
-            lineColor: "#8B8F89",
-            dotWidth: 4,
+            dotColor: "#dad3d3",
+            lineColor: "#dad3d3",
+            dotWidth: 6,
             lineWidth: 1,
             showLines: true,
             showDots: true,
-            size: .4
+            size: .30
         });
 
     function animate() {
