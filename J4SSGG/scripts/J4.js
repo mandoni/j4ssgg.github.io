@@ -1,25 +1,5 @@
 // Simple NET project using Canvas and pure JavaScript
 // author: @J4SSGG - Abraham Gutierrez
-
-let canvas;
-let ctx;
-
-let dotColor = "#E8444D";
-let lineColor = "#E8444D";
-
-
-let dots = [];
-
-let amount = 200;
-let width = 0;
-let height = 0;
-let xVelocity = 5;
-let yVelocity = 5;
-let dotWidth = 4;
-let lineWidth = 2;
-let highestPath = 0;
-
-
 class J4 {
 
 
@@ -32,26 +12,48 @@ class J4 {
      */
 
     constructor(canvasID, configuration) {
-        canvas = document.getElementById(canvasID);
-        canvas.width = document.body.clientWidth; // fix to blur
-        canvas.height = window.innerHeight; // fix to blur
-        ctx = canvas.getContext("2d");
+        this.canvas = document.getElementById(canvasID);
+        this.canvas.width = document.body.clientWidth; // fix to blur
+        this.canvas.height = window.innerHeight; // fix to blur
+        this.ctx = this.canvas.getContext("2d");
 
-        width = canvas.width;
-        height = canvas.height;
+        this.width = this.canvas.width;
+        this.height = this.canvas.height;
 
+
+        this.dotColor = "#E8444D";
+        this.lineColor = "#E8444D";
+
+        this.showLines = true;
+        this.showDots = true;
+
+        this.dots = [];
+
+        this.amount = 20;
+        this.xVelocity = 5;
+        this.yVelocity = 5;
+        this.dotWidth = 4;
+        this.lineWidth = 2;
+        this.highestPath = 0;
+        this.size = 3;
 
         // configurations
         if (configuration !== undefined) {
-            dotColor = configuration.dotColor !== undefined ? configuration.dotColor: dotColor;
-            lineColor = configuration.lineColor !== undefined ? configuration.lineColor : lineColor;
-            lineWidth = configuration.lineWidth !== undefined ? configuration.lineWidth : lineWidth;
-            dotWidth = configuration.dotWidth !== undefined ? configuration.dotWidth : dotWidth;
+            if (configuration.dotColor !== undefined) this.dotColor = configuration.dotColor;
+            if (configuration.lineColor !== undefined) this.lineColor = configuration.lineColor;
 
-            amount = configuration.amount !== undefined ? configuration.amount : amount;
+            if (configuration.lineWidth !== undefined) this.lineWidth = configuration.lineWidth;
+            if (configuration.dotWidth !== undefined) this.dotWidth = configuration.dotWidth;
 
-            xVelocity = configuration.xVelocity !== undefined ? configuration.xVelocity:xVelocity;
-            yVelocity = configuration.yVelocity !== undefined ? configuration.yVelocity:yVelocity;
+            if (configuration.amount !== undefined) this.amount = configuration.amount;
+
+            if (configuration.xVelocity !== undefined) this.xVelocity = configuration.xVelocity;
+            if (configuration.yVelocity !== undefined) this.yVelocity = configuration.yVelocity;
+
+            if (configuration.showDots != undefined) this.showDots = configuration.showDots;
+            if (configuration.showLines != undefined) this.showLines = configuration.showLines;
+
+            if (configuration.size != undefined) this.size = configuration.size;
         }
 
         this.initialize();
@@ -60,17 +62,17 @@ class J4 {
 
     initialize() {
         //clear dots array
-        dots = [];
+        this.dots = [];
 
         //fill again
-        for (var i = 0; i < amount; i++) {
-            dots.push({
+        for (var i = 0; i < this.amount; i++) {
+            this.dots.push({
                 id: i,
-                x: Math.random() * width,
-                y: Math.random() * height,
-                vx: Math.random() * xVelocity,
-                vy: Math.random() * yVelocity,
-                width: this.random(1, dotWidth),
+                x: Math.random() * this.width,
+                y: Math.random() * this.height,
+                vx: Math.random() * this.xVelocity * this.negativeRandom(),
+                vy: Math.random() * this.yVelocity * this.negativeRandom(),
+                width: this.random(1, this.dotWidth),
                 neighbors: []
             })
         }
@@ -84,8 +86,8 @@ class J4 {
      * @returns {number} 
      */
     euclideanDistance(A, B) {
-        let result = Math.sqrt((A.x - B.x) ** 2 + (A.y - B.y) ** 2 + (A.width- B.width) ** 2);
-        if (highestPath < result) highestPath = result;
+        let result = Math.sqrt((A.x - B.x) ** 2 + (A.y - B.y) ** 2 + (A.width - B.width) ** 2);
+        if (this.highestPath < result) this.highestPath = result;
         return result;
     }
 
@@ -100,6 +102,10 @@ class J4 {
         return Math.random() * (max - min) + min;;
     }
 
+    negativeRandom() {
+        return (Math.random() < 0.5 ? -1 : 1);
+    }
+
     compare(a, b) {
         if (a.distance < b.distance) return -1;
 
@@ -109,49 +115,89 @@ class J4 {
     }
 
     neighbors() {
-        for (var i = 0; i < amount; i++) {
-            dots[i].neighbors = [];
-            for (var j = 0; j < amount; j++) {
-                let path = this.euclideanDistance(dots[i], dots[j]);
-                if(path == 0) continue;
-                dots[i].neighbors.push(
-                    {
-                        id: dots[j].id,
+        if (this.showLines) {
+            for (var i = 0; i < this.amount; i++) {
+                this.dots[i].neighbors = [];
+                for (var j = 0; j < this.amount; j++) {
+                    let path = this.euclideanDistance(this.dots[i], this.dots[j]);
+                    if (path == 0) continue;
+                    this.dots[i].neighbors.push({
+                        id: this.dots[j].id,
                         distance: path
-                    }
-                );
+                    });
+                }
+                this.dots[i].neighbors.sort(this.compare);
             }
-            dots[i].neighbors.sort(this.compare);
         }
     }
 
     drawDots() {
-        dots.forEach(function (dot) {
-            ctx.beginPath();
-            ctx.arc(dot.x, dot.y, dot.width, 0, Math.PI * 2, false);
-            ctx.fillStyle = dotColor;
-            ctx.fill();
-        });
+        if (this.showDots) {
+            for (var j = 0; j < this.amount; j++) {
+                let dot = this.dots[j];
+                this.ctx.beginPath();
+                this.ctx.arc(dot.x, dot.y, dot.width, 0, Math.PI * 2, false);
+                this.ctx.fillStyle = this.dotColor;
+                this.ctx.fill();
+            }
+        }
     }
 
     drawLines(K) {
-        this.neighbors();
-        dots.forEach(function (dot) {
+        if (this.showLines) {
+            for (var j = 0; j < this.amount; j++) {
+                let dot = this.dots[j];
+                this.ctx.beginPath();
+                this.ctx.strokeStyle = this.lineColor;
 
-            ctx.beginPath();
-            ctx.strokeStyle = lineColor;
-
-            dot.neighbors.slice(0, K).forEach(function (neighbor) {
-                ctx.lineWidth = 2 * neighbor.distance / highestPath;
-                ctx.moveTo(dot.x, dot.y);
-                ctx.lineTo(dots[neighbor.id].x, dots[neighbor.id].y);
-                ctx.stroke();
-            });
-        });
+                for (var i = 0; i < K; i++) {
+                    let neighbor = dot.neighbors[i];
+                    this.ctx.lineWidth = this.lineWidth * neighbor.distance / this.highestPath;
+                    this.ctx.moveTo(dot.x, dot.y);
+                    this.ctx.lineTo(this.dots[neighbor.id].x, this.dots[neighbor.id].y);
+                    this.ctx.stroke();
+                }
+            }
+        }
     }
 
-    draw() {
-        return Promise.all([ctx.clearRect(0, 0, width, height),
-        this.drawLines(5), this.drawDots()]);
+
+
+    updatePosition() {
+        for (var j = 0; j < this.amount; j++) {
+            let dot = this.dots[j];
+
+            dot.x += dot.vx;
+            dot.y += dot.vy;
+
+            if (dot.x > this.width) {
+                dot.x = this.width;
+                dot.vx *= -1;
+            }
+            if (dot.x < 0) {
+                dot.x = 0;
+                dot.vx *= -1;
+            }
+            if (dot.y > this.height) {
+                dot.y = this.height;
+                dot.vy *= -1;
+            }
+            if (dot.y < 0) {
+                dot.y = 0;
+                dot.vy *= -1;
+            }
+        }
+    }
+
+    clear() {
+        this.canvas.width = this.width;
+    }
+
+    animation() {
+        this.clear();
+        this.neighbors();
+        this.drawLines(this.size);
+        this.drawDots();
+        this.updatePosition();
     }
 }
