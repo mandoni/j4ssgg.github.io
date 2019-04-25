@@ -89,7 +89,6 @@ function chart1() {
             width: '100%',
             height: '90%'
         },
-        legend: { position: 'none' },
         vAxis: {
             title: '',
             textStyle:
@@ -154,7 +153,6 @@ function chart2() {
             width: '100%',
             height: '90%'
         },
-        legend: { position: 'none' },
         vAxis: {
             title: '',
             textStyle:
