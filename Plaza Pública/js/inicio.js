@@ -296,10 +296,14 @@ function chart22() {
   };
 
   function showFullTooltip(row, size, value) {
-    return '<div style="background:#fd9; padding:10px; border-style:solid">' +
+    if (row == 0) {
+      return '<div style="background:#F2F2F2; padding:10px; border-style:solid">' +
+        '<span style="font-family:Courier"><b>Armas totales importadas</b>: ' + size + '</span></div>';
+    }
+    return '<div style="background:#F2F2F2; padding:10px; border-style:solid">' +
       '<span style="font-family:Courier"><b>Empresa</b>: ' + data.getValue(row, 0) +
       '<br><b>' + data.getValue(row, 1) + ':</b> ' + data.getValue(row, 2) +
-      '<br><b>'+ data.getColumnLabel(3) + ':</b> ' + (row) + '</span></div>';
+      '<br><b>' + data.getColumnLabel(3) + ':</b> ' + (row) + '</span></div>';
   }
 
 
@@ -308,6 +312,76 @@ function chart22() {
 }
 
 
+
+
+
+
+function chart23() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Contratistas', 'Parent', 'Máximos contratistas', 'Posición'],
+    ['Contrataciones', null, 0, 0],
+    ['INTERNET TELECOMUNICATION COMPANY DE GUATEMALA, S.A.', 'Contrataciones', 288587748.25, 254],
+    ['CONSTRUCCION Y TELE COMUNICACIONES, SOCIEDAD ANONIMA', 'Contrataciones', 262507968, 228],
+    ['PROTECCION TOTAL SOCIEDAD ANONIMA', 'Contrataciones', 256000000, 221],
+    ['INDRA SISTEMAS, S.A.', 'Contrataciones', 255488746.65, 221],
+    ['PROTECCION METROPOLITANA SOCIEDAD ANONIMA', 'Contrataciones', 246204738.33, 212],
+    ['V.I.P. SECURITY, SOCIEDAD ANONIMA', 'Contrataciones', 146462801.8, 112],
+    ['CORPORACION DE  SEGURIDAD COMANDO  SUR SOCIEDAD  ANONIMA', 'Contrataciones', 135567481.93, 101],
+    ['SEGURIDAD Y VIGILANCIA EL EBANO SOCIEDAD ANONIMA', 'Contrataciones', 122351537.59, 88],
+    ['GRUPO ESCORPION, SOCIEDAD ANONIMA', 'Contrataciones', 115437008.14, 81],
+    ['SERVICIO DE SEGURIDAD INTEGRAL, SOCIEDAD ANONIMA', 'Contrataciones', 112326853.28, 78],
+    ['SECURITY PROFESSIONAL SYSTEMS, SOCIEDAD ANONIMA', 'Contrataciones', 90792699.84, 56],
+    ['VIGILANCIA Y SEGURIDAD EMPRESARIAL DE GUATEMALA, SOCIEDAD ANONIMA', 'Contrataciones', 73367332.33, 39],
+    ['EMPRESA DE SEGURIDAD PARTICULAR ELITE S.A.', 'Contrataciones', 34048912, 0],
+    ['SAFARI SEGURIDAD SOCIEDAD ANONIMA', 'Contrataciones', 33550800, -1],
+    ['ARANA, CARRILLO SERVICIOS DE VIGILANCIA PROFESIONAL, S.A.', 'Contrataciones', 32573897.52, -2],
+    ['PROTECCION TECNICA, SOCIEDAD ANONIMA', 'Contrataciones', 32500850.03, -2],
+    ['ALARMAS DE GUATEMALA SOCIEDAD ANONIMA', 'Contrataciones', 30018759.32, -5],
+    ['COMANDO NAVAL DEL PACIFICO', 'Contrataciones', 28938899.9, -6],
+    ['WACKENHUT DE GUATEMALA SOCIEDAD ANONIMA', 'Contrataciones', 14980745, -20],
+    ['PROTECCION ELECTRONICA, SOCIEDAD ANONIMA', 'Contrataciones', 11861797.52, -23],
+    ['LA SEGURIDAD DE GUATEMALA, SOCIEDAD ANONIMA', 'Contrataciones', 9226931.66, -25],
+    ['INVESTIGACIONES Y SEGURIDAD PROFESIONAL, SOCIEDAD ANÃ“NIMA', 'Contrataciones', 8256600, -26],
+    ['ORGANIZACION DE SISTEMAS DE SEGURIDAD INTEGRAL E INVESTIGACIONES, SOCIEDAD ANONIMA', 'Contrataciones', 7655218, -27],
+    ['ALFA UNO SOCIEDAD ANONIMA', 'Contrataciones', 2158834.72, -32],
+    ['SEGURIDAD 2614, SOCIEDAD ANONIMA', 'Contrataciones', 305193.55, -34]
+
+  ]);
+
+
+  var options = {
+    highlightOnMouseOver: true,
+    maxDepth: 1,
+    maxPostDepth: 2,
+    minHighlightColor: celeste,
+    midHighlightColor: rose,
+    maxHighlightColor: rose,
+    minColor: celeste,
+    midColor: rose,
+    maxColor: red,
+    headerHeight: 35,
+    showScale: false,
+    height: 500,
+    useWeightedAverageForAggregation: false,
+    generateTooltip: showFullTooltip
+  };
+
+  function showFullTooltip(row, size, value) {
+    if (row == 0) {
+      return '<div style="background:#F2F2F2; padding:10px; border-style:solid">' +
+        '<span style="font-family:Courier"><b>Contrataciones por Q </b>' + size + '</span></div>';
+    }
+    return '<div style="background:#F2F2F2; padding:10px; border-style:solid">' +
+      '<span style="font-family:Courier"><b>Empresa</b>: ' + data.getValue(row, 0) +
+      '<br><b>' + data.getValue(row, 1) + ':</b> Q ' + data.getValue(row, 2) +
+      '<br><b>' + data.getColumnLabel(3) + ':</b> ' + (row) + '</span></div>';
+  }
+
+  var visualization = new google.visualization.TreeMap(document.getElementById('grafico23'));
+  visualization.draw(data, options);
+}
+
 /* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */
 let free = true;
 
@@ -315,6 +389,7 @@ function redraw() {
   draw1();
   draw2();
   draw22();
+  draw23();
 }
 
 $(window).resize(function () {
