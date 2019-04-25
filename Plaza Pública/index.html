@@ -299,11 +299,9 @@
      <div class="pd-g graph">
         <div class="px-5 alt">
             <div class="content">
-                <div class="title">Las más denunciadas<img src="images/isotipo.svg"></div><br>
+                <div class="title">Municiones 1996 - 2018 <img src="images/isotipo.svg"></div><br>
                 <div>
-                    Esta es la cantidad de procesos registrados por el Organismo Judicial para las 22 empresas de
-                    seguridad privada
-                    investigadas por Laberinto del Poder, identificadas como mayores contratistas del Estado.
+                    Cantidad de municiones importadas a Guatemala durante 22 años.
                 </div>
 
             </div>
@@ -319,9 +317,13 @@
                 </script>
             </div>
         </div>
-
+        <p class="text-right">
+                * Datos hasta abril 2018<br>
+        </p>
         <p class="text-center px-5">
-            <b>Fuente:</b> Guatecompras, Ministerio de Finanzas, Organismo Judicial.
+
+                
+            <b>Fuente:</b> DIGECAM, Ministerio de la Defensa Nacional  
         </p>
     </div>
 
@@ -334,7 +336,7 @@
                 <div class="title">Importadores de municiones<img src="images/isotipo.svg"></div><br>
                 <div>
                     Estas son las empresas que más licencias de importación de municiones han recibido en los últimos 22
-                    años.
+                    años. 
                 </div>
 
             </div>
@@ -352,9 +354,39 @@
         </div>
 
         <p class="text-center px-5">
-            <b>Fuente:</b> Digecam, Ministerio de la Defensa
+            <b>Fuente:</b> DIGECAM, Ministerio de la Defensa
         </p>
     </div>
+
+
+    <!-- Grafico 22 -->
+
+    <div class="pd-g graph">
+            <div class="px-5 alt">
+                <div class="content">
+                    <div class="title">Armas 2000 - 2017<img src="images/isotipo.svg"></div><br>
+                    <div>
+                        Cantidad de armas importadas a Guatemala durante 17 años y sus respectivos importadores.
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="p-5">
+                <div id="grafico22">
+                    <script>
+                        function draw22() {
+                            google.charts.load("current", {packages: ["treemap"]});
+                            google.charts.setOnLoadCallback(chart22);
+                        }
+                    </script>
+                </div>
+            </div>
+    
+            <p class="text-center px-5">
+                <b>Fuente:</b> DIGECAM, Ministerio de la Defensa Nacional  
+            </p>
+        </div>
 
     <!--Titulo-->
     <p class="titulo pd py-0">

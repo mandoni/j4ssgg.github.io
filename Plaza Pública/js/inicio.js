@@ -61,41 +61,26 @@ function chart1() {
 
   // Define the chart to be drawn.
   var data = google.visualization.arrayToDataTable([
-    ['Entidad', 'Denuncias'],
-    ['Grupo Escorpión, S.A.', 631],
-    ['Protección Total, S.A.', 367],
-    ['Vigilancia Y Seguridad Empresarial De Guatemala (VISEGUA), S.A.', 356],
-    ['Alarmas De Guatemala, S.A.', 184],
-    ['Seguridad Y Vigilancia El Ébano, S.A.', 172],
-    ['Security Professional Systems, S.A.', 148],
-    ['Seguridad 2614, S.A.', 119],
-    ['La Seguridad De Guatemala, S.A.', 115],
-    ['Servicios De Seguridad Integral (Omega 2000), S.A.', 86],
-    ['Protección Metropolitana, S.A.', 72],
-    ['Investigaciones Y Seguridad Profesional (ISP), S.A.', 63],
-    ['Delta Nueve, S.A.', 54],
-    ['Grupo Escorpión, S.A.', 53],
-    ['Safari Seguridad, S.A.', 48],
-    ['Seguridad Y Vigilancia El Ébano', 44],
-    ['Rudy Valiente Guzmán', 41],
-    ['Julio Raúl Alvarado Porres', 29],
-    ['Roberto Mauricio Miralles González', 28],
-    ['Enrique Aberel Rodriguez Figueroa', 27],
-    ['Empresa De Seguridad Particular Elite, S.A.', 26],
-    ['Rosa Edvel Orellana Alarcón', 25],
-    ['VISEGUA,', 24],
-    ['Juan Federico Gustavo Saravia Aguirre', 23],
-    ['Safari Shooting Servicios Y Sistemas De Seguridad, S.A.', 22],
-    ['Protección Técnica, S.A.', 22],
-    ['Flor De María Hernández Catalán', 21],
-    ['Hugo Ricardo Alvarado Chávez', 18],
-    ['Eddie Walter Sempe Custodio', 15],
-    ['Servicios De Seguridad Integral (Omega 2000), S.A. ', 14],
-    ['Protección Electrónica, S.A.', 13],
-    ['Security Professional Systems, S.A.', 13],
-    ['Acsel Moises Urizar Cabrera', 11],
-    ['Werner Francisco Herrera Alvarado', 10],
-    ['Alarmas De Guatemala, S.A.', 10]
+    ['Año', 'Balas Importadas'],
+    ['1996', 248500],
+    ['1997', 25453910],
+    ['1998', 21019500],
+    ['1999', 21877198],
+    ['2000', 23650400],
+    ['2001', 35848260],
+    ['2002', 31420780],
+    ['2003', 8359950],
+    ['2008', 106000],
+    ['2009', 26212000],
+    ['2010', 25864500],
+    ['2011', 26104100],
+    ['2012', 21178460],
+    ['2013', 16333600],
+    ['2014', 29987200],
+    ['2015', 27042200],
+    ['2016', 27071450],
+    ['2017', 34467800],
+    ['2018', 13273650]
   ]);
 
   var options = {
@@ -118,7 +103,6 @@ function chart1() {
       }
     },
     vAxis: {
-      title: '',
       textStyle:
       {
         color: text,
@@ -215,12 +199,122 @@ function chart2() {
 }
 
 
+
+function chart22() {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Importadores', 'Parent', 'Armas Importadas', 'Posición '],
+    ['Armas importadas', null, 0, 0],
+    ['MUNICIONES', 'Armas importadas', 43324, 35],
+    ['CEMSA', 'Armas importadas', 42223, 34],
+    ['CORPO Q', 'Armas importadas', 31577, 33],
+    ['AIRE LIBRE', 'Armas importadas', 27383, 32],
+    ['ALMACEN EL BISONTE', 'Armas importadas', 24305, 31],
+    ['DIRECCION GENERAL DE LA POLICIA NACIONAL CIVIL', 'Armas importadas', 15446, 30],
+    ['MAINLEY', 'Armas importadas', 15228, 29],
+    ['TILSA', 'Armas importadas', 14929, 28],
+    ['MUNAR', 'Armas importadas', 13812, 27],
+    ['STI GUATEMALA', 'Armas importadas', 9958, 26],
+    ['ARMAS DEFENSIVAS Y DEPORTIVAS', 'Armas importadas', 9927, 25],
+    ['COMERCIAL AGRICOLA BOLAÑOS', 'Armas importadas', 9606, 24],
+    ['PUNTO DE MIRA', 'Armas importadas', 9267, 23],
+    ['DEFENSA', 'Armas importadas', 8408, 22],
+    ['GIR', 'Armas importadas', 5886, 21],
+    ['IMSA', 'Armas importadas', 5647, 20],
+    ['EQUIPO DEFENSIVO', 'Armas importadas', 5558, 19],
+    ['BIOSERUM REPRESENTACIONES, SOCIEDAD ANONIMA', 'Armas importadas', 4788, 18],
+    ['ARMSA GUATEMALA', 'Armas importadas', 4455, 17],
+    ['MUNICAR', 'Armas importadas', 4357, 16],
+    ['CAMUFLAJE', 'Armas importadas', 4355, 15],
+    ['ARMERIA EL AGUILA', 'Armas importadas', 1498, 14],
+    ['FRANSALVA, SOCIEDAD ANONIMA', 'Armas importadas', 1447, 13],
+    ['ESQUI-SPORT', 'Armas importadas', 1350, 12],
+    ['ARMAS Y MUNICIONES GUATEMALA', 'Armas importadas', 1296, 11],
+    ['SANTA CATARINA MITA', 'Armas importadas', 1007, 10],
+    ['AGUILA DEL DESIERTO', 'Armas importadas', 1007, 9],
+    ['POLIGONOS SOCIEDAD ANONIMA', 'Armas importadas', 909, 8],
+    ['DAGET INTERNATIONAL', 'Armas importadas', 725, 7],
+    ['GEFAHR', 'Armas importadas', 723, 6],
+    ['GUNDEPOT', 'Armas importadas', 683, 5],
+    ['ARESCO', 'Armas importadas', 603, 4],
+    ['SHOOTING SYSTEMS', 'Armas importadas', 554, 3],
+    ['CENTURIA', 'Armas importadas', 480, 2],
+    ['PROTECCION Y DEFENSA', 'Armas importadas', 400, 1],
+    ['ARMAS Y MUNICIONES LA TORRE', 'Armas importadas', 300, 0],
+    ['MINISTERIO DE GOBERNACION', 'Armas importadas', 250, -1],
+    ['EL TIRO 22', 'Armas importadas', 200, -2],
+    ['MARFILSA', 'Armas importadas', 200, -3],
+    ['COMERCIAL DE ARMAS Y MUNICIONES DE JUTIAPA', 'Armas importadas', 200, -4],
+    ['IMPORTADORA Y ARMERIA TAURUS DE GUATEMALA', 'Armas importadas', 175, -5],
+    ['DISTRIBUIDORA PIPER', 'Armas importadas', 130, -6],
+    ['HALCON DEPORTES', 'Armas importadas', 125, -7],
+    ['SECRETARIA DE ASUNTOS ADMINISTRATIVOS Y DE SEGURIDAD DE LA PRESIDENCIA DE LA REPUBLICA', 'Armas importadas', 120, -8],
+    ['LA CABAÑA DEL VAQUERO', 'Armas importadas', 105, -9],
+    ['MSA', 'Armas importadas', 100, -10],
+    ['EL VENADITO', 'Armas importadas', 100, -11],
+    ['ALTO IMPACTO', 'Armas importadas', 100, -12],
+    ['MUNIARM GUATEMALA', 'Armas importadas', 100, -13],
+    ['DIVISION DE ARMAS Y MUNICIONES', 'Armas importadas', 100, -14],
+    ['EL GLADIADOR', 'Armas importadas', 100, -15],
+    ['MUNICIONES LA TORRE', 'Armas importadas', 97, -16],
+    ['IMPORTADORA Y DISTRIBUIDORA RINSA, SOCIEDAD ANONIMA', 'Armas importadas', 87, -17],
+    ['GUN-MATE', 'Armas importadas', 80, -18],
+    ['FRANSALVA, SOCIEDAD ANONIMA ', 'Armas importadas', 75, -19],
+    ['NIVISA', 'Armas importadas', 75, -20],
+    ['COMISION INTERNACIONAL CONTRA LA IMPUNIDAD EN GUATEMALA', 'Armas importadas', 60, -21],
+    ['ARMERIA EL GUERRERO', 'Armas importadas', 50, -22],
+    ['ARMAS TACTICAS', 'Armas importadas', 50, -23],
+    ['BLACK DESERT', 'Armas importadas', 41, -24],
+    ['GADAR', 'Armas importadas', 40, -25],
+    ['TIRO PRACTICO', 'Armas importadas', 31, -26],
+    ['ESTADO MAYOR PRESIDENCIAL', 'Armas importadas', 30, -27],
+    ['ASOCIACION DEPORTIVA NACIONAL DE TIRO CON ARMAS DE CAZA', 'Armas importadas', 24, -28],
+    ['CONFEDERACION DEPORTIVA AUTONOMA DE GUATEMALA', 'Armas importadas', 16, -29],
+    ['DIRECCION GENERAL DE INTELIGENCIA CIVIL', 'Armas importadas', 6, -30],
+    ['ASOCIACION DEPORTIVA NAC.', 'Armas importadas', 5, -31],
+    ['DIRINSA', 'Armas importadas', 3, -32],
+    ['DIMPS', 'Armas importadas', 2, -33],
+    ['POLICIA NACIONAL CIVIL', 'Armas importadas', 1, -34]
+  ]);
+
+
+  var options = {
+    highlightOnMouseOver: true,
+    maxDepth: 1,
+    maxPostDepth: 2,
+    minHighlightColor: celeste,
+    midHighlightColor: rose,
+    maxHighlightColor: rose,
+    minColor: celeste,
+    midColor: rose,
+    maxColor: red,
+    headerHeight: 35,
+    showScale: false,
+    height: 500,
+    useWeightedAverageForAggregation: false,
+    generateTooltip: showFullTooltip
+  };
+
+  function showFullTooltip(row, size, value) {
+    return '<div style="background:#fd9; padding:10px; border-style:solid">' +
+      '<span style="font-family:Courier"><b>Empresa</b>: ' + data.getValue(row, 0) +
+      '<br><b>' + data.getValue(row, 1) + ':</b> ' + data.getValue(row, 2) +
+      '<br><b>'+ data.getColumnLabel(3) + ':</b> ' + (row) + '</span></div>';
+  }
+
+
+  var visualization = new google.visualization.TreeMap(document.getElementById('grafico22'));
+  visualization.draw(data, options);
+}
+
+
 /* Resize function built to avoid redraw charts multiple time while windows is resizing... specially on mobile! */
 let free = true;
 
 function redraw() {
   draw1();
   draw2();
+  draw22();
 }
 
 $(window).resize(function () {
@@ -235,3 +329,4 @@ $(window).resize(function () {
 
 
 $(document).ready(redraw);
+
