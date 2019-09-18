@@ -1,0 +1,25 @@
+div.select {
+  display: inline-block;
+  margin: 0 0 1em 0;
+}
+
+p.small {
+  font-size: 0.7em;
+}
+
+label {
+  width: 12em;
+  display: inline-block;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background: #427180;
+}
+/*# sourceMappingURL=app.css.map */

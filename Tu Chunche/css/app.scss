@@ -1,0 +1,24 @@
+$color-background: #427180;
+
+
+div.select {
+    display: inline-block;
+    margin: 0 0 1em 0;
+}
+
+p.small {
+    font-size: 0.7em;
+}
+
+label {
+    width: 12em;
+    display: inline-block;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: $color-background;
+}
