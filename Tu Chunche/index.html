@@ -25,25 +25,48 @@
 
     <title>¿Dónde compraste tu chunche?</title>
 
-    <link rel="icon" sizes="192x192" href="images/icon.jpg">
-    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/icon.jpg">
     <link rel="stylesheet" href="css/app.css">
 
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div id="container">
-
-
-    <div class="select">
-        <label for="videoSource">Video source: </label><select id="videoSource"></select>
+<div id="main" class="container">
+    <div>
+        <div class="row">
+            <h1>
+                ¿Dónde Compraste Tu Chunche?
+            </h1>
+        </div>
+        <div class="row">
+            <label id="imageName" for="image">Cargar Imagen</label>
+            <input id="image" class="file" type="file" name="image" accept="image/*">
+            <label id="takeImage" for="camera">Usar Cámara</label>
+        </div>
+        <div id="preview" class="row mt-5">
+            
+        </div>
     </div>
-
-    <video id="video" playsinline autoplay></video>
-
 </div>
 
+<div id="camera" class="container">
+    <div class="viewer">
+        <video id="video" playsinline autoplay></video>
+    </div>
+    <div class="options">
+        <div id="changeCamera">
+            <i id="cameraIcon" class="material-icons">camera_rear</i>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/camera.js" async></script>
+<script src="js/app.js" async></script>
+
 </body>
 </html>
