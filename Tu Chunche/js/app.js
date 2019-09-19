@@ -28,6 +28,22 @@ $('#changeCamera').click(function(){
     }
 }); 
 
+///colocar la imagen del stream en div:preview 
+$('#shoot').click(function(){
+    $video = document.querySelector('video');
+    $video.pause();
+
+    //Obtener contexto del canvas y dibujar sobre él
+    $canvas = document.querySelector('canvas')
+    let contexto = $canvas.getContext("2d");
+    $canvas.width = $video.videoWidth;
+    $canvas.height = $video.videoHeight;
+    contexto.drawImage($video, 0, 0, $canvas.width, $canvas.height);
+
+    $camera = document.querySelector('#camera');
+    $camera.hide();
+    
+});
 
 /// actualizar nombre de input file
 // generar priview
@@ -36,6 +52,8 @@ jQuery('input[type=file]').change(function(){
     $('#imageName').html(jQuery(this).val().split('\\').pop());
     filePreview($('input[type=file]')[0]);
 });
+
+
 
 
 function filePreview(input) {

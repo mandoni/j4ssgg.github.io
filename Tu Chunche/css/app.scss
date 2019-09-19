@@ -49,6 +49,17 @@ body {
     width: 100%;
 }
 
+.shootTrigger {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: red;
+    bottom: 100;
+    width: 100%;
+}
+
 .row {
     display: flex;
     flex-basis: 100%;
