@@ -52,11 +52,8 @@ function handleError(error) {
 }
 
 function start() {
-  if (window.stream) {
-    window.stream.getTracks().forEach(track => {
-      track.stop();
-    });
-  }
+  
+  stop();
 
   const videoSource = videoSelect[deviceIndex].value;
   const constraints = {
@@ -68,6 +65,14 @@ function start() {
   };
   navigator.mediaDevices.getUserMedia(constraints).then(gotStream).then(gotDevices).catch(handleError);
   return videoSelect[deviceIndex];
+}
+
+function stop(){
+  if (window.stream) {
+    window.stream.getTracks().forEach(track => {
+      track.stop();
+    });
+  }
 }
 
 navigator.mediaDevices.enumerateDevices().then(gotDevices).catch(handleError);
