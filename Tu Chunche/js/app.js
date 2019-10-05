@@ -29,7 +29,7 @@ $('#changeCamera').click(function(){
 }); 
 
 ///colocar la imagen del stream en div:preview 
-$('#shoot').click(function(){
+$('#cameraIcon').click(function(){
     $video = document.querySelector('video');
     $video.pause();
 
@@ -40,13 +40,17 @@ $('#shoot').click(function(){
     $canvas.height = $video.videoHeight;
     contexto.drawImage($video, 0, 0, $canvas.width, $canvas.height);
 
-    $camera = document.querySelector('#camera');
-    $camera.hide();
+    $('#camera').fadeOut(500);
+    $('#main').fadeIn(500);
+
+    stop();
+
+    filePreviewCanvas($canvas);
     
 });
 
 /// actualizar nombre de input file
-// generar priview
+// generar preview
 
 jQuery('input[type=file]').change(function(){
     $('#imageName').html(jQuery(this).val().split('\\').pop());
@@ -67,4 +71,10 @@ function filePreview(input) {
         }
         reader.readAsDataURL(input.files[0]);
     }
+}
+
+function filePreviewCanvas(canvas){
+    $('#preview img').remove();
+    $('#preview').append('<img src="'+canvas.toDataURL()+'" width="100%" />');
+    $('#preview img').fadeIn(1000);
 }
